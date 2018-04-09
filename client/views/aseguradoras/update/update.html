@@ -1,0 +1,127 @@
+<template name="AseguradorasUpdate">
+	<div class="page-container container" id="content">
+		<div class="row" id="title_row">
+			<div class="col-md-12">
+			</div>
+		</div>
+		{{> AseguradorasUpdateForm}}
+	</div>
+</template>
+
+<template name="AseguradorasUpdateForm">
+	<div id="aseguradoras-update-form" class="">
+		<h2 id="component-title">
+			Editar Aseguradora
+		</h2>
+		<form role="form">
+			{{#if errorMessage}}
+			<div class="alert alert-warning">
+				{{errorMessage}}
+			</div>
+			{{/if}}
+
+			{{#if infoMessage}}
+			<div class="alert alert-success">
+				{{infoMessage}}
+			</div>
+			{{/if}}
+			<div class="form-group  field-ase_descripcion">
+				<label for="ase_descripcion">
+					DESCRIPCION
+				</label>
+				<div class="input-div">
+					<input type="text" name="ase_descripcion" value="{{aseguradora.ase_descripcion}}" class="form-control " autofocus="autofocus" required="required" data-type="string">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group text field-ase_telefonos-celular">
+				<label for="ase_telefonos.celular">
+					CELULAR
+				</label>
+				<div class="input-div">
+					<input type="text" name="ase_telefonos.celular" value="{{aseguradora.ase_telefonos.celular}}" class="form-control " required="required" data-type="object">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group text field-ase_telefonos-oficina">
+				<label for="ase_telefonos.oficina">
+					TRABAJO
+				</label>
+				<div class="input-div">
+					<input type="text" name="ase_telefonos.oficina" value="{{aseguradora.ase_telefonos.oficina}}" class="form-control " required="required" data-type="object">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group text field-ase_telefonos-fax">
+				<label for="ase_telefonos.fax">
+					FAX
+				</label>
+				<div class="input-div">
+					<input type="text" name="ase_telefonos.fax" value="{{aseguradora.ase_telefonos.fax}}" class="form-control " data-type="object">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group text field-ase_telefonos-otro">
+				<label for="ase_telefonos.otro">
+					OTRO
+				</label>
+				<div class="input-div">
+					<input type="text" name="ase_telefonos.otro" value="{{aseguradora.ase_telefonos.otro}}" class="form-control " data-type="object">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-ase_tipo">
+				<label for="ase_tipo">
+					TIPO
+				</label>
+				<div class="input-div">
+					<input type="text" name="ase_tipo" value="{{aseguradora.ase_tipo}}" class="form-control " data-type="string">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-ase_active">
+				<label for="ase_active">
+					HABILITADO
+				</label>
+				<div class="input-div">
+					<input type="text" name="ase_active" value="{{aseguradora.ase_active}}" class="form-control " required="required" data-type="bool">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="submit-div">
+					<button id="form-submit-button" class="btn btn-success" type="submit">
+						<span class="fa fa-check">
+						</span>
+						Save
+					</button>
+					<a href="#" id="form-cancel-button" class="btn btn-default">
+						Cancel
+					</a>
+				</div>
+			</div>
+		</form>
+	</div>
+</template>
+

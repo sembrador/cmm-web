@@ -1,0 +1,97 @@
+<template name="PlanesInsert">
+	<div class="page-container container" id="content">
+		<div class="row" id="title_row">
+			<div class="col-md-12">
+			</div>
+		</div>
+		{{> PlanesInsertForm}}
+	</div>
+</template>
+
+<template name="PlanesInsertForm">
+	<div id="planes-insert-form" class="">
+		<h2 id="component-title">
+			Agregar Plan
+		</h2>
+		<form role="form">
+			{{#if errorMessage}}
+			<div class="alert alert-warning">
+				{{errorMessage}}
+			</div>
+			{{/if}}
+
+			{{#if infoMessage}}
+			<div class="alert alert-success">
+				{{infoMessage}}
+			</div>
+			{{/if}}
+			<div class="form-group  field-pla_descripcion">
+				<label for="pla_descripcion">
+					DESCRIPCION
+				</label>
+				<div class="input-div">
+					<input type="text" name="pla_descripcion" value="" class="form-control " autofocus="autofocus" required="required" data-type="string">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-pla_aseguradora">
+				<label for="pla_aseguradora">
+					COMPAÑIA
+				</label>
+				<div class="input-div">
+					<select class="form-control " name="pla_aseguradora" data-type="string" required="required">
+						{{#each aseguradora_list}}
+						<option value="{{ase_descripcion}}">							{{ASEGURADORA}}</option>
+						{{/each}}
+					</select>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-pla_descuento">
+				<label for="pla_descuento">
+					DESCUENTO
+				</label>
+				<div class="input-div">
+					<input type="text" name="pla_descuento" value="0.0000" class="form-control " required="required" data-type="float" data-min="0">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-pla_activo">
+				<div class="input-div" data-required="true">
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" value="1" name="pla_activo" data-type="bool" checked>
+							HABILITADO
+						</label>
+					</div>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="submit-div">
+					<button id="form-submit-button" class="btn btn-success" type="submit">
+						<span class="fa fa-check">
+						</span>
+						Save
+					</button>
+					<a href="#" id="form-cancel-button" class="btn btn-default">
+						Cancel
+					</a>
+				</div>
+			</div>
+		</form>
+	</div>
+</template>
+

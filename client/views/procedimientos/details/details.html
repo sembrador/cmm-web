@@ -1,0 +1,122 @@
+<template name="ProcedimientosDetails">
+	<div class="page-container container" id="content">
+		<div class="row" id="title_row">
+			<div class="col-md-12">
+			</div>
+		</div>
+		{{> ProcedimientosDetailsForm}}
+	</div>
+</template>
+
+<template name="ProcedimientosDetailsForm">
+	<div id="procedimientos-details-form" class="">
+		<h2 id="component-title">
+			<a href="#" id="form-back-button" class="btn btn-default" title="regresar">
+				<span class="fa fa-chevron-left">
+				</span>
+			</a>
+			Detalles Procedimiento
+		</h2>
+		<form role="form">
+			{{#if errorMessage}}
+			<div class="alert alert-warning">
+				{{errorMessage}}
+			</div>
+			{{/if}}
+
+			{{#if infoMessage}}
+			<div class="alert alert-success">
+				{{infoMessage}}
+			</div>
+			{{/if}}
+			<div class="form-group  field-pro_cpt">
+				<label for="pro_cpt">
+					CODIGO CPT
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-pro_cpt">
+						{{procedimiento.pro_cpt}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-pro_codigo">
+				<label for="pro_codigo">
+					CODIGO PROCEDIMIENTO
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-pro_codigo">
+						{{procedimiento.pro_codigo}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-pro_descripcion">
+				<label for="pro_descripcion">
+					DESCRIPCION
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-pro_descripcion">
+						{{procedimiento.pro_descripcion}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-pro_precio">
+				<label for="pro_precio">
+					PRECIO
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-pro_precio">
+						{{procedimiento.pro_precio}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-pro_departamento">
+				<label for="pro_departamento">
+					DEPARTAMENTO
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-pro_departamento">
+						{{procedimiento.pro_departamento}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-pro_utiempo">
+				<label for="pro_utiempo">
+					UNIDAD DE TIEMPO
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-pro_utiempo">
+						{{procedimiento.pro_utiempo}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-pro_color">
+				<label for="pro_color">
+					COLOR EN AGENDA
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-pro_color">
+						{{procedimiento.pro_color}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-pro_activo">
+				<label for="pro_activo">
+					HABILITADO
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-pro_activo">
+						{{procedimiento.pro_activo}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="submit-div">
+					<a href="#" id="form-close-button" class="btn btn-primary">
+						OK
+					</a>
+				</div>
+			</div>
+		</form>
+	</div>
+</template>
+

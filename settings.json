@@ -1,0 +1,13 @@
+{
+  "public": {
+    "intercom": {
+      "id": "ev7vhngy",
+      "allowAnonymous": true
+    },
+    "appVersion": "v8.0.0.12"
+  },
+  "intercom": {
+    "personalAccessToken": "dG9rOmFjOTNiNWNhXzdlMWRfNDY3OF84YmNjX2IzMGI1MjkyOGRmZjoxOjA=",
+    "secret": "VSlEatDQvOWiOtO46IdrTMQrlyKy6K_eDR_lWE90"
+  }
+}

@@ -1,0 +1,82 @@
+<template name="PlanesDetails">
+	<div class="page-container container" id="content">
+		<div class="row" id="title_row">
+			<div class="col-md-12">
+			</div>
+		</div>
+		{{> PlanesDetailsForm}}
+	</div>
+</template>
+
+<template name="PlanesDetailsForm">
+	<div id="planes-details-form" class="">
+		<h2 id="component-title">
+			<a href="#" id="form-back-button" class="btn btn-default" title="regresar">
+				<span class="fa fa-chevron-left">
+				</span>
+			</a>
+			Detalles Plan
+		</h2>
+		<form role="form">
+			{{#if errorMessage}}
+			<div class="alert alert-warning">
+				{{errorMessage}}
+			</div>
+			{{/if}}
+
+			{{#if infoMessage}}
+			<div class="alert alert-success">
+				{{infoMessage}}
+			</div>
+			{{/if}}
+			<div class="form-group  field-pla_descripcion">
+				<label for="pla_descripcion">
+					DESCRIPCION
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-pla_descripcion">
+						{{plan.pla_descripcion}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-pla_aseguradora">
+				<label for="pla_aseguradora">
+					COMPAÑIA
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-pla_aseguradora">
+						{{plan.pla_aseguradora}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-pla_descuento">
+				<label for="pla_descuento">
+					DESCUENTO
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-pla_descuento">
+						{{plan.pla_descuento}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-pla_activo">
+				<label for="pla_activo">
+					HABILITADO
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-pla_activo">
+						{{plan.pla_activo}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="submit-div">
+					<a href="#" id="form-close-button" class="btn btn-primary">
+						OK
+					</a>
+				</div>
+			</div>
+		</form>
+	</div>
+</template>
+

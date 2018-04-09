@@ -1,0 +1,97 @@
+<template name="PlanesUpdate">
+	<div class="page-container container" id="content">
+		<div class="row" id="title_row">
+			<div class="col-md-12">
+			</div>
+		</div>
+		{{> PlanesUpdateForm}}
+	</div>
+</template>
+
+<template name="PlanesUpdateForm">
+	<div id="planes-update-form" class="">
+		<h2 id="component-title">
+			Editar Plan
+		</h2>
+		<form role="form">
+			{{#if errorMessage}}
+			<div class="alert alert-warning">
+				{{errorMessage}}
+			</div>
+			{{/if}}
+
+			{{#if infoMessage}}
+			<div class="alert alert-success">
+				{{infoMessage}}
+			</div>
+			{{/if}}
+			<div class="form-group  field-pla_descripcion">
+				<label for="pla_descripcion">
+					DESCRIPCION
+				</label>
+				<div class="input-div">
+					<input type="text" name="pla_descripcion" value="{{plan.pla_descripcion}}" class="form-control " autofocus="autofocus" required="required" data-type="string">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-pla_aseguradora">
+				<label for="pla_aseguradora">
+					COMPAÑIA
+				</label>
+				<div class="input-div">
+					<select class="form-control " name="pla_aseguradora" data-type="string" required="required">
+						{{#each aseguradora_list}}
+						<option value="{{ase_descripcion}}" {{optionIsSelected ../plan.pla_aseguradora ase_descripcion}}>							{{ASEGURADORA}}</option>
+						{{/each}}
+					</select>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-pla_descuento">
+				<label for="pla_descuento">
+					DESCUENTO
+				</label>
+				<div class="input-div">
+					<input type="text" name="pla_descuento" value="{{plan.pla_descuento}}" class="form-control " required="required" data-type="float" data-min="0">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-pla_activo">
+				<div class="input-div" data-required="true">
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" value="{{plan.pla_activo}}" name="pla_activo" data-type="bool" {{itemIsChecked plan.pla_activo true}}>
+							HABILITADO
+						</label>
+					</div>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="submit-div">
+					<button id="form-submit-button" class="btn btn-success" type="submit">
+						<span class="fa fa-check">
+						</span>
+						Save
+					</button>
+					<a href="#" id="form-cancel-button" class="btn btn-default">
+						Cancel
+					</a>
+				</div>
+			</div>
+		</form>
+	</div>
+</template>
+

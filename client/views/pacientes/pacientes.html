@@ -1,0 +1,204 @@
+<template name="Pacientes">
+	<div class="page-container container" id="content">
+		<div class="row" id="title_row">
+			<div class="col-md-12">
+			</div>
+		</div>
+		{{> PacientesView}}
+	</div>
+</template>
+
+<template name="PacientesView">
+	<div id="pacientes-view" class="">
+		<h2 id="component-title">
+			Pacientes
+		</h2>
+		<form id="dataview-controls" class="form-inline">
+			<div id="dataview-controls-insert" class="form-group {{insertButtonClass}}">
+				<button type="submit" id="dataview-insert-button" class="btn btn-success">
+					<span class="fa fa-plus">
+					</span>
+					Agregar
+				</button>
+			</div>
+			<div id="dataview-controls-search">
+				<div id="dataview-controls-search-group" class="form-group">
+					<label class="sr-only" for="search">
+						Buscar
+					</label>
+					<input type="text" class="form-control" id="dataview-search-input" placeholder="Buscar" name="search" value="{{searchString}}" autofocus="autofocus">
+					<button type="button" id="dataview-search-button" class="btn btn-primary">
+						<span class="fa fa-search">
+						</span>
+					</button>
+				</div>
+			</div>
+			<div id="dataview-controls-export" class="form-group">
+				{{#if isNotEmpty}}
+		{{#if isFound}}
+				<div>
+				</div>
+				{{else}}
+				<div class="btn-group">
+					<button type="button" class="btn btn-default" id="dataview-export-default">
+						Exportar
+					</button>
+					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+						<span class="caret">
+						</span>
+					</button>
+					<ul class="dropdown-menu" role="menu">
+						<li>
+							<a href="#" id="dataview-export-csv">
+								Exportar a CSV
+							</a>
+						</li>
+						<li>
+							<a href="#" id="dataview-export-tsv">
+								Exportar a TSV
+							</a>
+						</li>
+						<li>
+							<a href="#" id="dataview-export-json">
+								Exportar a JSON
+							</a>
+						</li>
+					</ul>
+				</div>
+				{{/if}}
+	{{/if}}
+			</div>
+		</form>
+		{{#if isNotEmpty}}
+			{{#if isNotFound}}
+		<div class="alert alert-warning">
+			No se encontró ningún registro.
+		</div>
+		{{else}}
+		<div id="dataview-data">
+			{{#if viewAsTable}} {{> PacientesViewTable}} {{/if}}
+		</div>
+		{{/if}}
+		{{else}}
+		<div class="alert alert-info">
+			No hay pacientes registrados.
+		</div>
+		{{/if}}
+	</div>
+</template>
+
+<template name="PacientesViewTable">
+	<table id="dataview-table" class="table table-striped table-hover">
+		<thead id="dataview-table-header">
+			<tr id="dataview-table-header-row">
+				<th class="th-sortable" data-sort="cliente_numero">
+					NUMERO
+				</th>
+				<th class="th-sortable" data-sort="cliente_nombres">
+					NOMBRES
+				</th>
+				<th class="th-sortable" data-sort="cliente_apellidos">
+					APELLIDOS
+				</th>
+				<th class="th-sortable" data-sort="cliente_genero">
+					SEXO
+				</th>
+				<th class="th-sortable" data-sort="cliente_telefonos.celular">
+					CELULAR
+				</th>
+				<th class="th-sortable" data-sort="cliente_telefonos.trabajo">
+					TRABAJO
+				</th>
+				<th class="th-sortable" data-sort="cliente_telefonos.casa">
+					CASA
+				</th>
+				<th class="th-sortable" data-sort="cliente_telefonos.otro">
+					OTRO
+				</th>
+				<th class="th-sortable" data-sort="cliente_cedula">
+					CEDULA
+				</th>
+				<th class="th-sortable" data-sort="cliente_pasaporte">
+					PASAPORTE
+				</th>
+				<th class="th-sortable" data-sort="cliente_ssocial">
+					SEGURO SOCIAL
+				</th>
+				<th class="th-sortable" data-sort="cliente_email">
+					E-MAIL
+				</th>
+				<th class="th-sortable" data-sort="cliente_ecivil">
+					ESTADO CIVIL
+				</th>
+				<th class="th-sortable" data-sort="cliente_activo">
+					ACTIVO
+				</th>
+				<th>
+					&nbsp;
+				</th>
+				<th>
+					&nbsp;
+				</th>
+			</tr>
+		</thead>
+		<tbody id="dataview-table-items">
+			{{#each tableItems}} {{> PacientesViewTableItems}} {{/each}}
+		</tbody>
+	</table>
+</template>
+
+<template name="PacientesViewTableItems">
+	<tr id="dataview-table-items-row">
+		<td>
+			{{cliente_numero}}
+		</td>
+		<td>
+			{{cliente_nombres}}
+		</td>
+		<td>
+			{{cliente_apellidos}}
+		</td>
+		<td>
+			{{cliente_genero}}
+		</td>
+		<td>
+			{{cliente_telefonos.celular}}
+		</td>
+		<td>
+			{{cliente_telefonos.trabajo}}
+		</td>
+		<td>
+			{{cliente_telefonos.casa}}
+		</td>
+		<td>
+			{{cliente_telefonos.otro}}
+		</td>
+		<td>
+			{{cliente_cedula}}
+		</td>
+		<td>
+			{{cliente_pasaporte}}
+		</td>
+		<td>
+			{{cliente_ssocial}}
+		</td>
+		<td>
+			{{cliente_email}}
+		</td>
+		<td>
+			{{cliente_ecivil}}
+		</td>
+		<td>
+			<input type="checkbox" class="inline-checkbox {{editButtonClass}}" data-field="cliente_activo" {{checked cliente_activo}}>
+		</td>
+		<td class="td-icon">
+			<span id="edit-button" class="fa fa-pencil {{editButtonClass}}" title="Editar">
+			</span>
+		</td>
+		<td class="td-icon">
+			<span id="delete-button" class="fa fa-trash-o {{deleteButtonClass}}" title="Eliminar">
+			</span>
+		</td>
+	</tr>
+</template>
+

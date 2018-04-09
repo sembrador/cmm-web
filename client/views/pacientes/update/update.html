@@ -1,0 +1,409 @@
+<template name="PacientesUpdate">
+	<div class="page-container container" id="content">
+		<div class="row" id="title_row">
+			<div class="col-md-12">
+			</div>
+		</div>
+		{{> PacientesUpdateForm}}
+	</div>
+</template>
+
+<template name="PacientesUpdateForm">
+	<div id="pacientes-update-form" class="">
+		<h2 id="component-title">
+			Editar Paciente
+		</h2>
+		<form role="form">
+			{{#if errorMessage}}
+			<div class="alert alert-warning">
+				{{errorMessage}}
+			</div>
+			{{/if}}
+
+			{{#if infoMessage}}
+			<div class="alert alert-success">
+				{{infoMessage}}
+			</div>
+			{{/if}}
+			<div class="form-group  field-cliente_numero">
+				<label for="cliente_numero">
+					NUMERO
+				</label>
+				<div class="input-div">
+					<input type="text" name="cliente_numero" value="{{paciente.cliente_numero}}" class="form-control " autofocus="autofocus" required="required" data-type="integer">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-cliente_nombres">
+				<label for="cliente_nombres">
+					NOMBRES
+				</label>
+				<div class="input-div">
+					<input type="text" name="cliente_nombres" value="{{paciente.cliente_nombres}}" class="form-control " required="required" data-type="string">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-cliente_apellidos">
+				<label for="cliente_apellidos">
+					APELLIDOS
+				</label>
+				<div class="input-div">
+					<input type="text" name="cliente_apellidos" value="{{paciente.cliente_apellidos}}" class="form-control " required="required" data-type="string">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-cliente_genero">
+				<label for="cliente_genero">
+					SEXO
+				</label>
+				<div class="input-div">
+					<select class="form-control " name="cliente_genero" data-type="string" required="required">
+						<option value="M" {{optionIsSelected paciente.cliente_genero "M"}}>							MASCULINO</option>
+						<option value="F" {{optionIsSelected paciente.cliente_genero "F"}}>							FEMENINO</option>
+					</select>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-cliente_fch_nac">
+				<label for="cliente_fch_nac">
+					FECHA DE NACIMIENTO
+				</label>
+				<div class="input-div">
+					<div class="input-group date">
+						<input type="text" name="cliente_fch_nac" value="{{formatDate paciente.cliente_fch_nac 'DD/MM/YYYY'}}" class="form-control " required="required" data-type="date" data-format="DD/MM/YYYY">
+						<span class="input-group-addon">
+							<i class="fa fa-calendar">
+							</i>
+						</span>
+					</div>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-cliente_tipaje">
+				<label for="cliente_tipaje">
+					TIPO DE SANGRE
+				</label>
+				<div class="input-div">
+					<select class="form-control " name="cliente_tipaje" data-type="string" required="required">
+						<option value="O+" {{optionIsSelected paciente.cliente_tipaje "O+"}}>							O+</option>
+						<option value="O-" {{optionIsSelected paciente.cliente_tipaje "O-"}}>							O-</option>
+						<option value="A+" {{optionIsSelected paciente.cliente_tipaje "A+"}}>							A+</option>
+						<option value="A-" {{optionIsSelected paciente.cliente_tipaje "A-"}}>							A-</option>
+						<option value="B+" {{optionIsSelected paciente.cliente_tipaje "B+"}}>							B+</option>
+						<option value="B-" {{optionIsSelected paciente.cliente_tipaje "B-"}}>							B-</option>
+						<option value="AB+" {{optionIsSelected paciente.cliente_tipaje "AB+"}}>							AB+</option>
+						<option value="AB-" {{optionIsSelected paciente.cliente_tipaje "AB-"}}>							AB-</option>
+					</select>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group text field-cliente_telefonos-celular">
+				<label for="cliente_telefonos.celular">
+					CELULAR
+				</label>
+				<div class="input-div">
+					<input type="text" name="cliente_telefonos.celular" value="{{paciente.cliente_telefonos.celular}}" class="form-control " required="required" data-type="object">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group text field-cliente_telefonos-trabajo">
+				<label for="cliente_telefonos.trabajo">
+					TRABAJO
+				</label>
+				<div class="input-div">
+					<input type="text" name="cliente_telefonos.trabajo" value="{{paciente.cliente_telefonos.trabajo}}" class="form-control " required="required" data-type="object">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group text field-cliente_telefonos-casa">
+				<label for="cliente_telefonos.casa">
+					CASA
+				</label>
+				<div class="input-div">
+					<input type="text" name="cliente_telefonos.casa" value="{{paciente.cliente_telefonos.casa}}" class="form-control " required="required" data-type="object">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group text field-cliente_telefonos-otro">
+				<label for="cliente_telefonos.otro">
+					OTRO
+				</label>
+				<div class="input-div">
+					<input type="text" name="cliente_telefonos.otro" value="{{paciente.cliente_telefonos.otro}}" class="form-control " required="required" data-type="object">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group text field-cliente_direccion_casa-calle">
+				<label for="cliente_direccion_casa.calle">
+					CALLE
+				</label>
+				<div class="input-div">
+					<input type="text" name="cliente_direccion_casa.calle" value="{{paciente.cliente_direccion_casa.calle}}" class="form-control " required="required" data-type="object">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group text field-cliente_direccion_casa-corregimiento">
+				<label for="cliente_direccion_casa.corregimiento">
+					CORREGIMIENTO
+				</label>
+				<div class="input-div">
+					<input type="text" name="cliente_direccion_casa.corregimiento" value="{{paciente.cliente_direccion_casa.corregimiento}}" class="form-control " required="required" data-type="object">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group text field-cliente_direccion_casa-distrito">
+				<label for="cliente_direccion_casa.distrito">
+					DISTRITO
+				</label>
+				<div class="input-div">
+					<input type="text" name="cliente_direccion_casa.distrito" value="{{paciente.cliente_direccion_casa.distrito}}" class="form-control " required="required" data-type="object">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group text field-cliente_direccion_casa-provincia">
+				<label for="cliente_direccion_casa.provincia">
+					PROVINCIA
+				</label>
+				<div class="input-div">
+					<input type="text" name="cliente_direccion_casa.provincia" value="{{paciente.cliente_direccion_casa.provincia}}" class="form-control " required="required" data-type="object">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group text field-cliente_direccion_casa-apartado">
+				<label for="cliente_direccion_casa.apartado">
+					APARTADO
+				</label>
+				<div class="input-div">
+					<input type="text" name="cliente_direccion_casa.apartado" value="{{paciente.cliente_direccion_casa.apartado}}" class="form-control " data-type="object">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group text field-cliente_direccion_trabajo-calle">
+				<label for="cliente_direccion_trabajo.calle">
+					CALLE
+				</label>
+				<div class="input-div">
+					<input type="text" name="cliente_direccion_trabajo.calle" value="{{paciente.cliente_direccion_trabajo.calle}}" class="form-control " required="required" data-type="object">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group text field-cliente_direccion_trabajo-corregimiento">
+				<label for="cliente_direccion_trabajo.corregimiento">
+					CORREGIMIENTO
+				</label>
+				<div class="input-div">
+					<input type="text" name="cliente_direccion_trabajo.corregimiento" value="{{paciente.cliente_direccion_trabajo.corregimiento}}" class="form-control " required="required" data-type="object">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group text field-cliente_direccion_trabajo-distrito">
+				<label for="cliente_direccion_trabajo.distrito">
+					DISTRITO
+				</label>
+				<div class="input-div">
+					<input type="text" name="cliente_direccion_trabajo.distrito" value="{{paciente.cliente_direccion_trabajo.distrito}}" class="form-control " required="required" data-type="object">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group text field-cliente_direccion_trabajo-provincia">
+				<label for="cliente_direccion_trabajo.provincia">
+					PROVINCIA
+				</label>
+				<div class="input-div">
+					<input type="text" name="cliente_direccion_trabajo.provincia" value="{{paciente.cliente_direccion_trabajo.provincia}}" class="form-control " required="required" data-type="object">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group text field-cliente_direccion_trabajo-apartado">
+				<label for="cliente_direccion_trabajo.apartado">
+					APARTADO
+				</label>
+				<div class="input-div">
+					<input type="text" name="cliente_direccion_trabajo.apartado" value="{{paciente.cliente_direccion_trabajo.apartado}}" class="form-control " data-type="object">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-cliente_cedula">
+				<label for="cliente_cedula">
+					CEDULA
+				</label>
+				<div class="input-div">
+					<input type="text" name="cliente_cedula" value="{{paciente.cliente_cedula}}" class="form-control " required="required" data-type="string">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-cliente_pasaporte">
+				<label for="cliente_pasaporte">
+					PASAPORTE
+				</label>
+				<div class="input-div">
+					<input type="text" name="cliente_pasaporte" value="{{paciente.cliente_pasaporte}}" class="form-control " data-type="string">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-cliente_ssocial">
+				<label for="cliente_ssocial">
+					SEGURO SOCIAL
+				</label>
+				<div class="input-div">
+					<input type="text" name="cliente_ssocial" value="{{paciente.cliente_ssocial}}" class="form-control " data-type="string">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-cliente_email">
+				<label for="cliente_email">
+					E-MAIL
+				</label>
+				<div class="input-div">
+					<input type="text" name="cliente_email" value="{{paciente.cliente_email}}" class="form-control " required="required" data-type="email">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-cliente_ecivil">
+				<label for="cliente_ecivil">
+					ESTADO CIVIL
+				</label>
+				<div class="input-div">
+					<select class="form-control " name="cliente_ecivil" data-type="string" required="required">
+						<option value="SOLTERO" {{optionIsSelected paciente.cliente_ecivil "SOLTERO"}}>							SOLTERO</option>
+						<option value="CASADO" {{optionIsSelected paciente.cliente_ecivil "CASADO"}}>							CASADO</option>
+						<option value="UNIDO" {{optionIsSelected paciente.cliente_ecivil "UNIDO"}}>							UNIDO</option>
+						<option value="DIVORCIADO" {{optionIsSelected paciente.cliente_ecivil "DIVORCIADO"}}>							DIVORCIADO</option>
+						<option value="VIUDO" {{optionIsSelected paciente.cliente_ecivil "VIUDO"}}>							VIUDO</option>
+					</select>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-cliente_clase">
+				<label for="cliente_clase">
+					CLASIFICACION
+				</label>
+				<div class="input-div">
+					<select class="form-control " name="cliente_clase" data-type="string" required="required">
+						{{#each clasificacion_list}}
+						<option value="{{cla_descripcion}}" {{optionIsSelected ../paciente.cliente_clase cla_descripcion}}>							{{cla_descripcion}}</option>
+						{{/each}}
+					</select>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-cliente_activo">
+				<div class="input-div" data-required="true">
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" value="{{paciente.cliente_activo}}" name="cliente_activo" data-type="bool" {{itemIsChecked paciente.cliente_activo true}}>
+							ACTIVO
+						</label>
+					</div>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-cliente_notas">
+				<label for="cliente_notas">
+					OBSERVACIONES
+				</label>
+				<div class="input-div">
+					<textarea class="form-control " name="cliente_notas">{{paciente.cliente_notas}}</textarea>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="submit-div">
+					<button id="form-submit-button" class="btn btn-success" type="submit">
+						<span class="fa fa-check">
+						</span>
+						Save
+					</button>
+					<a href="#" id="form-cancel-button" class="btn btn-default">
+						Cancel
+					</a>
+				</div>
+			</div>
+		</form>
+	</div>
+</template>
+

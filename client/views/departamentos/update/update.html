@@ -1,0 +1,108 @@
+<template name="DepartamentosUpdate">
+	<div class="page-container container" id="content">
+		<div class="row" id="title_row">
+			<div class="col-md-12">
+			</div>
+		</div>
+		{{> DepartamentosUpdateForm}}
+	</div>
+</template>
+
+<template name="DepartamentosUpdateForm">
+	<div id="departamentos-update-form" class="">
+		<h2 id="component-title">
+			Editar Departamento
+		</h2>
+		<form role="form">
+			{{#if errorMessage}}
+			<div class="alert alert-warning">
+				{{errorMessage}}
+			</div>
+			{{/if}}
+
+			{{#if infoMessage}}
+			<div class="alert alert-success">
+				{{infoMessage}}
+			</div>
+			{{/if}}
+			<div class="form-group  field-dep_codigo">
+				<label for="dep_codigo">
+					CODIGO
+				</label>
+				<div class="input-div">
+					<input type="text" name="dep_codigo" value="{{departamento.dep_codigo}}" class="form-control " autofocus="autofocus" required="required" data-type="integer">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-dep_descripcion">
+				<label for="dep_descripcion">
+					DESCRIPCION
+				</label>
+				<div class="input-div">
+					<input type="text" name="dep_descripcion" value="{{departamento.dep_descripcion}}" class="form-control " required="required" data-type="string">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-dep_seccion">
+				<label for="dep_seccion">
+					SECCION
+				</label>
+				<div class="input-div">
+					<input type="text" name="dep_seccion" value="{{departamento.dep_seccion}}" class="form-control " data-type="string">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-dep_agenda">
+				<label for="dep_agenda">
+					AGENDA
+				</label>
+				<div class="input-div">
+					<select class="form-control " name="dep_agenda" data-type="string" required="required">
+						<option value="Agenda - SOP" {{optionIsSelected departamento.dep_agenda "Agenda - SOP"}}>							Agenda - SOP</option>
+						<option value="Agenda - Rx" {{optionIsSelected departamento.dep_agenda "Agenda - Rx"}}>							Agenda - Rx</option>
+					</select>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-dep_activo">
+				<div class="input-div" data-required="true">
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" value="{{departamento.dep_activo}}" name="dep_activo" data-type="bool" {{itemIsChecked departamento.dep_activo true}}>
+							ACTIVO
+						</label>
+					</div>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="submit-div">
+					<button id="form-submit-button" class="btn btn-success" type="submit">
+						<span class="fa fa-check">
+						</span>
+						Save
+					</button>
+					<a href="#" id="form-cancel-button" class="btn btn-default">
+						Cancel
+					</a>
+				</div>
+			</div>
+		</form>
+	</div>
+</template>
+

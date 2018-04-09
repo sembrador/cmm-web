@@ -1,0 +1,133 @@
+<template name="Procedimientos">
+	<div class="page-container container" id="content">
+		<div class="row" id="title_row">
+			<div class="col-md-12">
+			</div>
+		</div>
+		{{> ProcedimientosView}}
+	</div>
+</template>
+
+<template name="ProcedimientosView">
+	<div id="procedimientos-view" class="">
+		<h2 id="component-title">
+			Procedimientos
+		</h2>
+		<form id="dataview-controls" class="form-inline">
+			<div id="dataview-controls-insert" class="form-group {{insertButtonClass}}">
+				<button type="submit" id="dataview-insert-button" class="btn btn-success">
+					<span class="fa fa-plus">
+					</span>
+					Agregar
+				</button>
+			</div>
+			<div id="dataview-controls-search">
+				<div id="dataview-controls-search-group" class="form-group">
+					<label class="sr-only" for="search">
+						Buscar
+					</label>
+					<input type="text" class="form-control" id="dataview-search-input" placeholder="Buscar" name="search" value="{{searchString}}" autofocus="autofocus">
+					<button type="button" id="dataview-search-button" class="btn btn-primary">
+						<span class="fa fa-search">
+						</span>
+					</button>
+				</div>
+			</div>
+		</form>
+		{{#if isNotEmpty}}
+			{{#if isNotFound}}
+		<div class="alert alert-warning">
+			No se encontró ninún registro.
+		</div>
+		{{else}}
+		<div id="dataview-data">
+			{{#if viewAsTable}} {{> ProcedimientosViewTable}} {{/if}}
+		</div>
+		{{/if}}
+		{{else}}
+		<div class="alert alert-info">
+			No hay registros! :(
+		</div>
+		{{/if}}
+	</div>
+</template>
+
+<template name="ProcedimientosViewTable">
+	<table id="dataview-table" class="table table-striped table-hover">
+		<thead id="dataview-table-header">
+			<tr id="dataview-table-header-row">
+				<th class="th-sortable" data-sort="pro_cpt">
+					CODIGO CPT
+				</th>
+				<th class="th-sortable" data-sort="pro_codigo">
+					CODIGO PROCEDIMIENTO
+				</th>
+				<th class="th-sortable" data-sort="pro_descripcion">
+					DESCRIPCION
+				</th>
+				<th class="th-sortable" data-sort="pro_precio">
+					PRECIO
+				</th>
+				<th class="th-sortable" data-sort="pro_departamento">
+					DEPARTAMENTO
+				</th>
+				<th class="th-sortable" data-sort="pro_utiempo">
+					UNIDAD DE TIEMPO
+				</th>
+				<th class="th-sortable" data-sort="pro_color">
+					COLOR EN AGENDA
+				</th>
+				<th class="th-sortable" data-sort="pro_activo">
+					HABILITADO
+				</th>
+				<th>
+					&nbsp;
+				</th>
+				<th>
+					&nbsp;
+				</th>
+			</tr>
+		</thead>
+		<tbody id="dataview-table-items">
+			{{#each tableItems}} {{> ProcedimientosViewTableItems}} {{/each}}
+		</tbody>
+	</table>
+</template>
+
+<template name="ProcedimientosViewTableItems">
+	<tr id="dataview-table-items-row">
+		<td>
+			{{pro_cpt}}
+		</td>
+		<td>
+			{{pro_codigo}}
+		</td>
+		<td>
+			{{pro_descripcion}}
+		</td>
+		<td>
+			{{pro_precio}}
+		</td>
+		<td>
+			{{pro_departamento}}
+		</td>
+		<td>
+			{{pro_utiempo}}
+		</td>
+		<td>
+			{{pro_color}}
+		</td>
+		<td>
+			<input type="checkbox" class="inline-checkbox {{editButtonClass}}" data-field="pro_activo" {{checked pro_activo}}>
+		</td>
+		<td class="td-icon">
+			<span id="edit-button" class="fa fa-pencil {{editButtonClass}}" title="Editar">
+			</span>
+		</td>
+		<td class="td-icon">
+			<span id="delete-button" class="fa fa-trash-o {{deleteButtonClass}}" title="Eliminar">
+			</span>
+		</td>
+	</tr>
+</template>
+

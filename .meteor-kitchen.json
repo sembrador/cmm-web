@@ -1,0 +1,1445 @@
+{
+	"output_files": [
+		{
+			"path": "client/views/router.js",
+			"checksum": "115d2644e432d412184533060bdad455d3dc0d71"
+		},
+		{
+			"path": "server/controllers/router.js",
+			"checksum": "f9d076cc64b65aa4ce85d9ca7272d8cfefc46694"
+		},
+		{
+			"path": "client/client.js",
+			"checksum": "520d16ccc6619d9076623a352de74cae759ffbfa"
+		},
+		{
+			"path": "server/server.js",
+			"checksum": "170ef912c4cd40a56404716193b835675647cb46"
+		},
+		{
+			"path": "client/views/not_found/not_found.html",
+			"checksum": "43d091189ad42d58f1e851ae936291dd6df2dfcb"
+		},
+		{
+			"path": "client/views/not_found/not_found.js",
+			"checksum": "b399a9a22e2f99c058a00b68bf264a244f09deaf"
+		},
+		{
+			"path": "client/views/loading/loading.html",
+			"checksum": "6181c7bf1924622911ca1d4c19577cc7ae3fc933"
+		},
+		{
+			"path": "client/views/loading/loading.js",
+			"checksum": "bd568a6b49a113afe91fedda35a96125c9731a87"
+		},
+		{
+			"path": "client/styles/styles/theme/bootswatch.import.less",
+			"checksum": "f8f6bbdd864036e12c390b9cbaa3ecce06494e87"
+		},
+		{
+			"path": "client/styles/styles/theme/theme.import.less",
+			"checksum": "f04733519720132ea291b6b3ad138181bf83bab4"
+		},
+		{
+			"path": "client/styles/styles/theme/themefix.import.less",
+			"checksum": "65d94792bea5905f40f9cde2d071a921ca342839"
+		},
+		{
+			"path": "client/styles/styles/theme/variables.import.less",
+			"checksum": "2579c5db372a76ecf05a56c7ce253d310dc30772"
+		},
+		{
+			"path": "client/styles/styles/styles.less",
+			"checksum": "41a1020026f26cab02ddf3e99894325de9a786bc"
+		},
+		{
+			"path": "client/views/layout/layout.html",
+			"checksum": "974782dd66a69a6f80b2aa955bb8129e2c11d5c0"
+		},
+		{
+			"path": "client/views/layout/layout.js",
+			"checksum": "88d4300bd3be0fd566fe34e54f977ee84ad4b89b"
+		},
+		{
+			"path": "client/views/home_public/home_public.html",
+			"checksum": "85e93b259a21ce0ab05e761069d54fdca246b74b"
+		},
+		{
+			"path": "client/views/home_public/home_public.js",
+			"checksum": "76f7fad7356f508c2664c309407fe23ee3f643d1"
+		},
+		{
+			"path": "client/views/home_public/home_public_controller.js",
+			"checksum": "a74fe8e593e0287c07d5c739d696b2117e6e709a"
+		},
+		{
+			"path": "client/views/login/login.html",
+			"checksum": "59faa723992d0f576c4880127c5c6de3c326f297"
+		},
+		{
+			"path": "client/views/login/login.js",
+			"checksum": "05f515ce7ee9eac6ec8bc91927ec7bbba5b8c5ec"
+		},
+		{
+			"path": "client/views/login/login_controller.js",
+			"checksum": "bb5224a58563fa3c11fa61c29f56eaf884768aa3"
+		},
+		{
+			"path": "client/views/register/register.html",
+			"checksum": "bd1b40b205db89efdb555bfd155067ec4392cc54"
+		},
+		{
+			"path": "client/views/register/register.js",
+			"checksum": "66aac5297f292b1e1f26dc5ce9d693e7519758d4"
+		},
+		{
+			"path": "client/views/register/register_controller.js",
+			"checksum": "e04c321a9f410c8ea1c2ff703da1542d75942745"
+		},
+		{
+			"path": "client/views/verify_email/verify_email.html",
+			"checksum": "690873b85d8c63ff1ec7648c18fc9ed1c74ecb83"
+		},
+		{
+			"path": "client/views/verify_email/verify_email.js",
+			"checksum": "62d5ebc927a942911174e5ae1ed5616320ed0c64"
+		},
+		{
+			"path": "client/views/verify_email/verify_email_controller.js",
+			"checksum": "18ffe62907bc6a77e732a632035de4b79943f726"
+		},
+		{
+			"path": "client/views/forgot_password/forgot_password.html",
+			"checksum": "e6409f2ad39c30c091166d6a1eec0bfcc4b8da1a"
+		},
+		{
+			"path": "client/views/forgot_password/forgot_password.js",
+			"checksum": "28dc5f41f2ff6a646daf69222c092b046130738d"
+		},
+		{
+			"path": "client/views/forgot_password/forgot_password_controller.js",
+			"checksum": "4fa77c07252926439e800a7d5b98e79090d20e77"
+		},
+		{
+			"path": "client/views/reset_password/reset_password.html",
+			"checksum": "4c12924d9d87e56605633d4944e864bfc0825d36"
+		},
+		{
+			"path": "client/views/reset_password/reset_password.js",
+			"checksum": "d01e36a5664379f72c10433fed267451492b8a1b"
+		},
+		{
+			"path": "client/views/reset_password/reset_password_controller.js",
+			"checksum": "08c7d6e06c13fbb5716b78629c8c1782571ad266"
+		},
+		{
+			"path": "client/views/home_private/home_private.html",
+			"checksum": "a5b11ce6636a92abf5849c7049dfbd81ae78a546"
+		},
+		{
+			"path": "client/views/home_private/home_private.js",
+			"checksum": "1b4e625fa8656484fcb2239b6a6ebebcefd2db6f"
+		},
+		{
+			"path": "client/views/home_private/home_private_controller.js",
+			"checksum": "55f59969d6597968c2f9b41543c2eea7f1fbd266"
+		},
+		{
+			"path": "client/views/admin/admin.html",
+			"checksum": "a37ba83cd5b8b49b8d24b80a6c956115008d1dd8"
+		},
+		{
+			"path": "client/views/admin/admin.js",
+			"checksum": "f13550a4a045f79b72da1bc0570aad61a47a8e7a"
+		},
+		{
+			"path": "client/views/admin/admin_controller.js",
+			"checksum": "5ba4b8ba766b73965f089e22d122cfc53f4189f3"
+		},
+		{
+			"path": "client/views/admin/users/users.html",
+			"checksum": "610d20f5a2c48186beb1728c769f8ef7561747fd"
+		},
+		{
+			"path": "client/views/admin/users/users.js",
+			"checksum": "e292c48558151425a18d90719d50751f3f40de90"
+		},
+		{
+			"path": "client/views/admin/users/users_controller.js",
+			"checksum": "ac85bc552157485275efe396c06a33a5ea7feaf1"
+		},
+		{
+			"path": "client/views/admin/users/details/details.html",
+			"checksum": "e732921f11bdae7c9687fb555a8283b34cf5f416"
+		},
+		{
+			"path": "client/views/admin/users/details/details.js",
+			"checksum": "f1b3502a44956198e686d775bf7629d649f94ab0"
+		},
+		{
+			"path": "client/views/admin/users/details/details_controller.js",
+			"checksum": "844944eca9f4a0f6f01ca3dc570a9cfa83f9dd31"
+		},
+		{
+			"path": "client/views/admin/users/insert/insert.html",
+			"checksum": "cc6f98d5565463ec39cc09c073ab0b1046524223"
+		},
+		{
+			"path": "client/views/admin/users/insert/insert.js",
+			"checksum": "ac0e4b06ff23afaf8c5118056e53dfd8aaed19b6"
+		},
+		{
+			"path": "client/views/admin/users/insert/insert_controller.js",
+			"checksum": "fcee5fc5b640b889827a9b897d3401be15b9673c"
+		},
+		{
+			"path": "client/views/admin/users/edit/edit.html",
+			"checksum": "7bbec76ec06c3ebd4a35e6125eafb4bb907ab0c1"
+		},
+		{
+			"path": "client/views/admin/users/edit/edit.js",
+			"checksum": "0da438ef07e6dc3d3db778d34d51af685ba263c8"
+		},
+		{
+			"path": "client/views/admin/users/edit/edit_controller.js",
+			"checksum": "13a3961e60216b5a3684fbc34bbdb6fbf8473b1e"
+		},
+		{
+			"path": "client/views/admin/counters/counters.html",
+			"checksum": "a85b490339ca7403f4eadc45372cd1881164c5a4"
+		},
+		{
+			"path": "client/views/admin/counters/counters.js",
+			"checksum": "426c01892206cc930fb594b64c81dce3168085d6"
+		},
+		{
+			"path": "client/views/admin/counters/counters_controller.js",
+			"checksum": "cb3520d75e9931c9c6d01ddd0ef60e49cc81e737"
+		},
+		{
+			"path": "client/views/admin/counters/details/details.html",
+			"checksum": "cc11a949fb1cca824a623f98a85475238c752e1b"
+		},
+		{
+			"path": "client/views/admin/counters/details/details.js",
+			"checksum": "f92d5305b4a44283b402628d3b8d5035c1614f21"
+		},
+		{
+			"path": "client/views/admin/counters/details/details_controller.js",
+			"checksum": "c1cf2b4e98aa35328d42e7488da569a6cd889555"
+		},
+		{
+			"path": "client/views/admin/counters/insert/insert.html",
+			"checksum": "5407073381457f21e6117d775e093ff7965d0a9e"
+		},
+		{
+			"path": "client/views/admin/counters/insert/insert.js",
+			"checksum": "1f3c87ad360b18aa42c7d0fb24272eba287595b3"
+		},
+		{
+			"path": "client/views/admin/counters/insert/insert_controller.js",
+			"checksum": "b711ed31127a4c9ef12a13f2b9933078937fe55a"
+		},
+		{
+			"path": "client/views/admin/counters/update/update.html",
+			"checksum": "5ffead809c242c02ac0fc7cd533433b66697f696"
+		},
+		{
+			"path": "client/views/admin/counters/update/update.js",
+			"checksum": "1a1e4657be90f1e142153d33af73cf0fe5cd3c1f"
+		},
+		{
+			"path": "client/views/admin/counters/update/update_controller.js",
+			"checksum": "680dc8fff2e4c5eba52edf9759d9ade0d66ad29b"
+		},
+		{
+			"path": "client/views/user_settings/user_settings.html",
+			"checksum": "26b84d3a52f62265929f6bb5eed7dd3b1129fa33"
+		},
+		{
+			"path": "client/views/user_settings/user_settings.js",
+			"checksum": "af54981da1a1a6c1016a6960419b07ff41b10943"
+		},
+		{
+			"path": "client/views/user_settings/user_settings_controller.js",
+			"checksum": "a5071a5cef7951f1dae75852dc95177689ecd806"
+		},
+		{
+			"path": "client/views/user_settings/profile/profile.html",
+			"checksum": "b1b5a6f0dbc643a6837e3f77d1d0141e1cb99120"
+		},
+		{
+			"path": "client/views/user_settings/profile/profile.js",
+			"checksum": "d807eaebb9b5bbc23b123c87facfaa94cd826f75"
+		},
+		{
+			"path": "client/views/user_settings/profile/profile_controller.js",
+			"checksum": "1c37c6368d51445cf5ccf2d5b551c96353ed4050"
+		},
+		{
+			"path": "client/views/user_settings/change_pass/change_pass.html",
+			"checksum": "ceba462601e0f72c22ff166683d1cb44de7892fc"
+		},
+		{
+			"path": "client/views/user_settings/change_pass/change_pass.js",
+			"checksum": "f96c59df259631984a20c61e270e0b19d58bd6d2"
+		},
+		{
+			"path": "client/views/user_settings/change_pass/change_pass_controller.js",
+			"checksum": "71ca8f89ee004189fcdb8600ec07b83c7ad8a192"
+		},
+		{
+			"path": "client/views/logout/logout.html",
+			"checksum": "ffde068f1a1cd15fdfee1b779579db44096d5975"
+		},
+		{
+			"path": "client/views/logout/logout.js",
+			"checksum": "39f0e9440d7fc5808462928c1f300227941c5837"
+		},
+		{
+			"path": "client/views/logout/logout_controller.js",
+			"checksum": "d1db0d31bbaef77ad9693a18d59871cab34a30ef"
+		},
+		{
+			"path": "client/views/pacientes/pacientes.html",
+			"checksum": "b18108067dd3bc2d6f8ffa307ed65c90d1e8d2a9"
+		},
+		{
+			"path": "client/views/pacientes/pacientes.js",
+			"checksum": "35a6282ae87b9bb4088810660405d6a940854541"
+		},
+		{
+			"path": "client/views/pacientes/pacientes_controller.js",
+			"checksum": "1282b2d74e86536f7579d47f303e6046313df0b5"
+		},
+		{
+			"path": "client/views/pacientes/details/details.html",
+			"checksum": "02a482ff7caf2d526c04baa3645638292bf72fda"
+		},
+		{
+			"path": "client/views/pacientes/details/details.js",
+			"checksum": "04e2ed3ec9eefeab025b2fcb0cc69dae1b499c88"
+		},
+		{
+			"path": "client/views/pacientes/details/details_controller.js",
+			"checksum": "fe1214ca2feb433054f277aa906984754799bce4"
+		},
+		{
+			"path": "client/views/pacientes/insert/insert.html",
+			"checksum": "fe4f7a8facc674e227070d9e946cdde1a53779a6"
+		},
+		{
+			"path": "client/views/pacientes/insert/insert.js",
+			"checksum": "6445394684a8439a49c9141554a6b977f6fd2d30"
+		},
+		{
+			"path": "client/views/pacientes/insert/insert_controller.js",
+			"checksum": "3ecbfff86b7073f8d2ea42faca1d7368d0eea74d"
+		},
+		{
+			"path": "client/views/pacientes/update/update.html",
+			"checksum": "d6453f5c9dc15c85ee04a42e05dc6a9b0d63f511"
+		},
+		{
+			"path": "client/views/pacientes/update/update.js",
+			"checksum": "67f07c010ac36e802ce79fb439ebf50fd92f29e3"
+		},
+		{
+			"path": "client/views/pacientes/update/update_controller.js",
+			"checksum": "6ebade8ab83b1e7422974b5d0a966d8a723e9b5f"
+		},
+		{
+			"path": "client/views/clasificaciones/clasificaciones.html",
+			"checksum": "ce09b1720178a8f92d9e243045d4e747f55a2023"
+		},
+		{
+			"path": "client/views/clasificaciones/clasificaciones.js",
+			"checksum": "d25ef5e55c417a5241cb2c2e81d1837b4f5f0fc5"
+		},
+		{
+			"path": "client/views/clasificaciones/clasificaciones_controller.js",
+			"checksum": "ba754ea468b24be5b874b2fbd5201fa82d6871da"
+		},
+		{
+			"path": "client/views/clasificaciones/details/details.html",
+			"checksum": "f19569c90efeab7c0402bc8e8ee3170aa4b00d5e"
+		},
+		{
+			"path": "client/views/clasificaciones/details/details.js",
+			"checksum": "048e712b5613e90bb9c5f2490ece078c318619a7"
+		},
+		{
+			"path": "client/views/clasificaciones/details/details_controller.js",
+			"checksum": "4b237ddf15db5996fdb10ceaf88f506561454ef6"
+		},
+		{
+			"path": "client/views/clasificaciones/insert/insert.html",
+			"checksum": "24a134973abf0425f7a491811e4e9fd25b6c32fa"
+		},
+		{
+			"path": "client/views/clasificaciones/insert/insert.js",
+			"checksum": "e5ae10794c44d0ea165a46bb6108d8ea757ac73c"
+		},
+		{
+			"path": "client/views/clasificaciones/insert/insert_controller.js",
+			"checksum": "b4f93e062de7ce4784664e8d9baf3cda416ed518"
+		},
+		{
+			"path": "client/views/clasificaciones/update/update.html",
+			"checksum": "46205fb3b407eb0f6d68fa1bb6e66598e58622f5"
+		},
+		{
+			"path": "client/views/clasificaciones/update/update.js",
+			"checksum": "f912e6faf5fed546c43ebc2a07144ceffed4a134"
+		},
+		{
+			"path": "client/views/clasificaciones/update/update_controller.js",
+			"checksum": "5777bb66341db5d50f40528b17e80c24c797fede"
+		},
+		{
+			"path": "client/views/secciones/secciones.html",
+			"checksum": "bcf5bb8ec506a2d5a447b483c1832a48f4ae6586"
+		},
+		{
+			"path": "client/views/secciones/secciones.js",
+			"checksum": "93a0f754ab6f16c23639704030ba438115ae8385"
+		},
+		{
+			"path": "client/views/secciones/secciones_controller.js",
+			"checksum": "ec36228809a512482bd8907f07e4f6ca7ccba284"
+		},
+		{
+			"path": "client/views/secciones/details/details.html",
+			"checksum": "774da55a78b245a18674766f8b96c23e2da11f57"
+		},
+		{
+			"path": "client/views/secciones/details/details.js",
+			"checksum": "f152dc06ee11cfa1108e6a88b8febc8a6f284f4c"
+		},
+		{
+			"path": "client/views/secciones/details/details_controller.js",
+			"checksum": "9720e69216a4291d2a9ba94bd7f35417396b2bf9"
+		},
+		{
+			"path": "client/views/secciones/insert/insert.html",
+			"checksum": "f4376fc51d73614f3dc2ca347cc21337f63eb7e4"
+		},
+		{
+			"path": "client/views/secciones/insert/insert.js",
+			"checksum": "370f6b84786c0c4b0ebb2732b767edeb3e2bf851"
+		},
+		{
+			"path": "client/views/secciones/insert/insert_controller.js",
+			"checksum": "7937b0759b2bea31be58ffa2cd13a9eab9f8cbf1"
+		},
+		{
+			"path": "client/views/secciones/update/update.html",
+			"checksum": "c6fb2c6a8433e0381a5cafdcba8147086128d2c2"
+		},
+		{
+			"path": "client/views/secciones/update/update.js",
+			"checksum": "c70f336879d1a9f3d28852062bc122fef9e582b5"
+		},
+		{
+			"path": "client/views/secciones/update/update_controller.js",
+			"checksum": "a371eee9d7660acad80ce57aa7b0d3ccf1cb3ffe"
+		},
+		{
+			"path": "client/views/departamentos/departamentos.html",
+			"checksum": "3525f50d68cd9b4b7e2bb635f1f7a200722c62b8"
+		},
+		{
+			"path": "client/views/departamentos/departamentos.js",
+			"checksum": "945b5d38142d9f5f8347b88929833a4118c8943a"
+		},
+		{
+			"path": "client/views/departamentos/departamentos_controller.js",
+			"checksum": "ba51cb117d85a29a8612c007d180da4db1999325"
+		},
+		{
+			"path": "client/views/departamentos/details/details.html",
+			"checksum": "e560db81ac72c2397a65dfd733492f0906d15cf8"
+		},
+		{
+			"path": "client/views/departamentos/details/details.js",
+			"checksum": "709b1d811f6b68dedc068dcb4e3a77b7299d402b"
+		},
+		{
+			"path": "client/views/departamentos/details/details_controller.js",
+			"checksum": "9bd527b6cb381850ceb7fe1b0b6b5e5802757966"
+		},
+		{
+			"path": "client/views/departamentos/insert/insert.html",
+			"checksum": "3c28474dc5644098387d04236f32f13cee03e87c"
+		},
+		{
+			"path": "client/views/departamentos/insert/insert.js",
+			"checksum": "deea01b6f6dc2d27b51f92078f453df82a891d60"
+		},
+		{
+			"path": "client/views/departamentos/insert/insert_controller.js",
+			"checksum": "b110482423c9b5ba53b811acc11ece2c59177ebf"
+		},
+		{
+			"path": "client/views/departamentos/update/update.html",
+			"checksum": "6d710cb21a7cbf57ca26fb122fdd651d896976fc"
+		},
+		{
+			"path": "client/views/departamentos/update/update.js",
+			"checksum": "43095c041df61c46314445b7f7098a58104cf50f"
+		},
+		{
+			"path": "client/views/departamentos/update/update_controller.js",
+			"checksum": "79166d77437babeb4ee7c4bff7bd167a534df31c"
+		},
+		{
+			"path": "client/views/especialidades/especialidades.html",
+			"checksum": "65527e9419e7e3fe44f0a9b3a8a91bed5139adde"
+		},
+		{
+			"path": "client/views/especialidades/especialidades.js",
+			"checksum": "a20185d5a2fe67e846a6835010f8f4099548f245"
+		},
+		{
+			"path": "client/views/especialidades/especialidades_controller.js",
+			"checksum": "3c217518ec2d95be08272b9f3e5563e85b284489"
+		},
+		{
+			"path": "client/views/especialidades/details/details.html",
+			"checksum": "0752b566cec08985310c914184d900a42ad61a82"
+		},
+		{
+			"path": "client/views/especialidades/details/details.js",
+			"checksum": "ce7c60eb593d7ecccafd05497d4856d065b0312e"
+		},
+		{
+			"path": "client/views/especialidades/details/details_controller.js",
+			"checksum": "4d3caa833386d6a79a4c35c355def54e806a1181"
+		},
+		{
+			"path": "client/views/especialidades/insert/insert.html",
+			"checksum": "082671ff53ff2afcf905df8a4b6148cf93164e7e"
+		},
+		{
+			"path": "client/views/especialidades/insert/insert.js",
+			"checksum": "5327d499774a03f6d4684a2e1ec5e1928dc5274d"
+		},
+		{
+			"path": "client/views/especialidades/insert/insert_controller.js",
+			"checksum": "cf7c5917e77ca45d9d9cfffa7f0c3da1956bc81e"
+		},
+		{
+			"path": "client/views/especialidades/update/update.html",
+			"checksum": "f192ea251ec8f60b1bf493e7a78695a21802cd0d"
+		},
+		{
+			"path": "client/views/especialidades/update/update.js",
+			"checksum": "3c370933ac6911a9692683923be13c36ff659a56"
+		},
+		{
+			"path": "client/views/especialidades/update/update_controller.js",
+			"checksum": "9f2f4c7f309fa9ef9d7333a3ffe91d84c0d25ae8"
+		},
+		{
+			"path": "client/views/referidores/referidores.html",
+			"checksum": "578983e6826c9d56fe22aae5d323e19d54b539cd"
+		},
+		{
+			"path": "client/views/referidores/referidores.js",
+			"checksum": "fdc4741ed62f260021b58d9649192d5964ddbcb5"
+		},
+		{
+			"path": "client/views/referidores/referidores_controller.js",
+			"checksum": "79db643a666cb23b2839c5b9de0644c771553fbd"
+		},
+		{
+			"path": "client/views/referidores/details/details.html",
+			"checksum": "81eef4b0317c0de4d30a7c1c58c8660897a5a4ca"
+		},
+		{
+			"path": "client/views/referidores/details/details.js",
+			"checksum": "b5ddfc4d50c4f3ad2e273038ffaaffc240945835"
+		},
+		{
+			"path": "client/views/referidores/details/details_controller.js",
+			"checksum": "0781a25244ab1eb072caf9a634443b5cf2fa2b73"
+		},
+		{
+			"path": "client/views/referidores/insert/insert.html",
+			"checksum": "ccdf9cee24ec5d4e1c00463f801b6cf7cf478087"
+		},
+		{
+			"path": "client/views/referidores/insert/insert.js",
+			"checksum": "c8c279600693800214712e6a52fddb980558dcc7"
+		},
+		{
+			"path": "client/views/referidores/insert/insert_controller.js",
+			"checksum": "86cd332a98f26b853b1e4615ff88b32a20f9cbcd"
+		},
+		{
+			"path": "client/views/referidores/update/update.html",
+			"checksum": "8867c4c0e0d9f63ece3a804633e9d33ae1e739e6"
+		},
+		{
+			"path": "client/views/referidores/update/update.js",
+			"checksum": "6fd206ead8e1de39b42c5297f0a3cfa24785fa84"
+		},
+		{
+			"path": "client/views/referidores/update/update_controller.js",
+			"checksum": "97dfa73c1d2fe003dadf6cf161806befab3d2e4f"
+		},
+		{
+			"path": "client/views/procedimientos/procedimientos.html",
+			"checksum": "9c0ac4285d34199930eaec2f6f1e6604d79ecea8"
+		},
+		{
+			"path": "client/views/procedimientos/procedimientos.js",
+			"checksum": "378850c6cd1d2a7c247c0f53bf36fb8f53ae40b6"
+		},
+		{
+			"path": "client/views/procedimientos/procedimientos_controller.js",
+			"checksum": "13e6efc22e24282714b81964575cc61a0946bbaf"
+		},
+		{
+			"path": "client/views/procedimientos/details/details.html",
+			"checksum": "756d70b3f158e7cb09a60dfe80bd85f248873192"
+		},
+		{
+			"path": "client/views/procedimientos/details/details.js",
+			"checksum": "40e0e8a90512f837a7d80162303d2e6bd968c3a0"
+		},
+		{
+			"path": "client/views/procedimientos/details/details_controller.js",
+			"checksum": "91f024b8f32a37ac4e35cb1f378d4ec994ed484e"
+		},
+		{
+			"path": "client/views/procedimientos/insert/insert.html",
+			"checksum": "54bc9532c2f47fbf3c52211658e61b577d3d4d86"
+		},
+		{
+			"path": "client/views/procedimientos/insert/insert.js",
+			"checksum": "9d229304df9efc63d9ef113b8c2f01d2b7231ad6"
+		},
+		{
+			"path": "client/views/procedimientos/insert/insert_controller.js",
+			"checksum": "b872952a294119ef3f7ed96edd01b0645212884f"
+		},
+		{
+			"path": "client/views/procedimientos/update/update.html",
+			"checksum": "d8b9060e63f141f84cf9dc6ce8378e98f2489c33"
+		},
+		{
+			"path": "client/views/procedimientos/update/update.js",
+			"checksum": "71bb36c9333a00c6c34abd92c89b79ca612cbb44"
+		},
+		{
+			"path": "client/views/procedimientos/update/update_controller.js",
+			"checksum": "c48548bb2cca40e7c3b1901ffb28254cdcfe6b8d"
+		},
+		{
+			"path": "client/views/aseguradoras/aseguradoras.html",
+			"checksum": "83e6404a1f9abd598905c02d36570e8e6cbff1fc"
+		},
+		{
+			"path": "client/views/aseguradoras/aseguradoras.js",
+			"checksum": "db757db3ba2b04e2af18790f0141fb6a2183fab3"
+		},
+		{
+			"path": "client/views/aseguradoras/aseguradoras_controller.js",
+			"checksum": "f59fddf456f6e35b04eb1708a234f1187c11f01f"
+		},
+		{
+			"path": "client/views/aseguradoras/details/details.html",
+			"checksum": "03aad13da3143bdb53a8fb21dce7a4f805c3d9f1"
+		},
+		{
+			"path": "client/views/aseguradoras/details/details.js",
+			"checksum": "f2304a58738fa0c2ac53c4a71115476db56c972a"
+		},
+		{
+			"path": "client/views/aseguradoras/details/details_controller.js",
+			"checksum": "2029549e7c88554aceabc0d0cd7fa31c0479fb6b"
+		},
+		{
+			"path": "client/views/aseguradoras/insert/insert.html",
+			"checksum": "19a40a51c63322acd40361ffebf1ee201dbc5032"
+		},
+		{
+			"path": "client/views/aseguradoras/insert/insert.js",
+			"checksum": "4e2161d5be5019e97b955efc734137fdf0f015b2"
+		},
+		{
+			"path": "client/views/aseguradoras/insert/insert_controller.js",
+			"checksum": "f9fe94c288e2a44ad9cd7f207ad110d0839c6167"
+		},
+		{
+			"path": "client/views/aseguradoras/update/update.html",
+			"checksum": "c708672b86a4e7b1c045cb8dedcd9dc09359856f"
+		},
+		{
+			"path": "client/views/aseguradoras/update/update.js",
+			"checksum": "a80ad894f0a331be8fb1384aa190ab8a522e6875"
+		},
+		{
+			"path": "client/views/aseguradoras/update/update_controller.js",
+			"checksum": "74580be673fa2665080fb9e3b300594302842f06"
+		},
+		{
+			"path": "client/views/planes/planes.html",
+			"checksum": "bf08e8458b03b1dc8475df968e95de4891ea7553"
+		},
+		{
+			"path": "client/views/planes/planes.js",
+			"checksum": "b83c9c0506331a25f3cbe0465dca2e07951ea0ed"
+		},
+		{
+			"path": "client/views/planes/planes_controller.js",
+			"checksum": "4391383864c3a2068d455e2f3df64fd13a0d2dd0"
+		},
+		{
+			"path": "client/views/planes/details/details.html",
+			"checksum": "e2ca5613ab01f330ae09d033ec51efb42459954b"
+		},
+		{
+			"path": "client/views/planes/details/details.js",
+			"checksum": "03d818c515d921a6dbb4f49d24bb28f0c23df10c"
+		},
+		{
+			"path": "client/views/planes/details/details_controller.js",
+			"checksum": "f854f4a2e97c43f2b3ac7fbbd4b46aa8751ffcd1"
+		},
+		{
+			"path": "client/views/planes/insert/insert.html",
+			"checksum": "26402c9e1da8c358d11e069a5b1d2248e08add01"
+		},
+		{
+			"path": "client/views/planes/insert/insert.js",
+			"checksum": "7cb63f29ebd9f68d14d2251ea6fb009f40004a81"
+		},
+		{
+			"path": "client/views/planes/insert/insert_controller.js",
+			"checksum": "ff4bac01e92f1150d8df5b2fe400f672b6f4a460"
+		},
+		{
+			"path": "client/views/planes/update/update.html",
+			"checksum": "3fb756ec8a47ed5ab443f327957167a8ee16b590"
+		},
+		{
+			"path": "client/views/planes/update/update.js",
+			"checksum": "9b92946adec17af46ebe52fb32c092cc3d2638a1"
+		},
+		{
+			"path": "client/views/planes/update/update_controller.js",
+			"checksum": "c21c9c9c86062e5a70a1b8f98e274d72a64730e2"
+		},
+		{
+			"path": "client/views/agenda_rx/agenda_rx.html",
+			"checksum": "f2d7bdd7c69e3be76dedae5e6a922ba627249212"
+		},
+		{
+			"path": "client/views/agenda_rx/agenda_rx.js",
+			"checksum": "674165ca1f602dbea0c6002ccf194d04ffc9d4e0"
+		},
+		{
+			"path": "client/views/agenda_rx/agenda_rx_controller.js",
+			"checksum": "fa8b05748dab4e9f3f01ed4d064836de3e770909"
+		},
+		{
+			"path": "client/views/agenda_sop/agenda_sop.html",
+			"checksum": "a5288576fa79de98fc4790d099d79e340e72a43e"
+		},
+		{
+			"path": "client/views/agenda_sop/agenda_sop.js",
+			"checksum": "f9028c23b0f2c7b1b82fa76c6b7382773d5bd613"
+		},
+		{
+			"path": "client/views/agenda_sop/agenda_sop_controller.js",
+			"checksum": "0e91531417a515af9e8669075fb5f49012e5cb98"
+		},
+		{
+			"path": "both/collections/info_pacientes.js",
+			"checksum": "a1b65cfaaaadf8b6c6393d19cc8762e844f5abff"
+		},
+		{
+			"path": "server/methods/info_pacientes.js",
+			"checksum": "82e6e6e468b9931f5af31f2f83af7f16aefa80cb"
+		},
+		{
+			"path": "server/collections/info_pacientes.js",
+			"checksum": "828698389e17c492af689cc9f0d20e597870b1e8"
+		},
+		{
+			"path": "server/publish/info_pacientes.js",
+			"checksum": "515eef16321b15c907d76eada70be85361391c7f"
+		},
+		{
+			"path": "both/collections/info_clasificaciones.js",
+			"checksum": "3f62bcbfc53aa782124bc48e193a74a13af204de"
+		},
+		{
+			"path": "server/methods/info_clasificaciones.js",
+			"checksum": "2c7e6ff155b4715dbf3ddd24554fda605adb0786"
+		},
+		{
+			"path": "server/collections/info_clasificaciones.js",
+			"checksum": "f3dbdec9e5a5373ac3e3139d084d67f0160e348b"
+		},
+		{
+			"path": "server/publish/info_clasificaciones.js",
+			"checksum": "070f70e8876cec8ad701947c66c6fe6a91e49def"
+		},
+		{
+			"path": "both/collections/info_secciones.js",
+			"checksum": "ed1033a73ec891e86400aa10fab81768bb6fc318"
+		},
+		{
+			"path": "server/methods/info_secciones.js",
+			"checksum": "4386f5818c127ccbfdbdad11578c344c11955359"
+		},
+		{
+			"path": "server/collections/info_secciones.js",
+			"checksum": "3af3cd6fe2e8960403ffecd7f939dd045b52198c"
+		},
+		{
+			"path": "server/publish/info_secciones.js",
+			"checksum": "ec5ba66d5f781225f44dff3821954c424423db6c"
+		},
+		{
+			"path": "both/collections/info_departamentos.js",
+			"checksum": "eda9e0729efb930f099f908bb1655e881d9477da"
+		},
+		{
+			"path": "server/methods/info_departamentos.js",
+			"checksum": "7a888abe8591356353f3e9c65dfa874ff18b425a"
+		},
+		{
+			"path": "server/collections/info_departamentos.js",
+			"checksum": "1e211f4662083627af723da555957fe73b2c6e5c"
+		},
+		{
+			"path": "server/publish/info_departamentos.js",
+			"checksum": "08d6cadb868a3f85d900d3d852a43e4992aa581f"
+		},
+		{
+			"path": "both/collections/info_especialidades.js",
+			"checksum": "7084ce43093d1d9863693eb7926df0b7ec7e8c2f"
+		},
+		{
+			"path": "server/methods/info_especialidades.js",
+			"checksum": "8822feaee8519cf30978ae2f465c61360e520c78"
+		},
+		{
+			"path": "server/collections/info_especialidades.js",
+			"checksum": "d64d88c895f833d728f3f618193d2a88e35d6208"
+		},
+		{
+			"path": "server/publish/info_especialidades.js",
+			"checksum": "8cb84a4a8fc2c301339c5c0677b2fcedf311f8f4"
+		},
+		{
+			"path": "both/collections/info_referidores.js",
+			"checksum": "4b5fee747f08384f2b91ba04d006669f308d352c"
+		},
+		{
+			"path": "server/methods/info_referidores.js",
+			"checksum": "def90654a3b288c81b3eb65021d01335f548d7ef"
+		},
+		{
+			"path": "server/collections/info_referidores.js",
+			"checksum": "f174619efd8bb600ab371f80df334fb71536e368"
+		},
+		{
+			"path": "server/publish/info_referidores.js",
+			"checksum": "fcf67b21ccb6269d6070f6184d02f6c457798b3f"
+		},
+		{
+			"path": "both/collections/info_procedimientos.js",
+			"checksum": "5568af927355bb4d1acc1142687752e8fcbe67d5"
+		},
+		{
+			"path": "server/methods/info_procedimientos.js",
+			"checksum": "1a05f700a9e27f7f690efe0eed73ccfb5a964461"
+		},
+		{
+			"path": "server/collections/info_procedimientos.js",
+			"checksum": "18d49bb2e413c83450e7e721741a973f21052133"
+		},
+		{
+			"path": "server/publish/info_procedimientos.js",
+			"checksum": "b3213af9bb83a5882add718bfa050e0d6c4c9cf8"
+		},
+		{
+			"path": "both/collections/info_aseguradoras.js",
+			"checksum": "9e76c34f611050b1e3caca4f3e410229d5d63f69"
+		},
+		{
+			"path": "server/methods/info_aseguradoras.js",
+			"checksum": "b9d4e7abd81a1246c15e601dd7f07259af54e710"
+		},
+		{
+			"path": "server/collections/info_aseguradoras.js",
+			"checksum": "0bc1b19c4cb9d66e0f3b156c79a1f84675ff88fa"
+		},
+		{
+			"path": "server/publish/info_aseguradoras.js",
+			"checksum": "bcf6be674479696fe272e1cd15ce36c775bf020f"
+		},
+		{
+			"path": "both/collections/info_planes.js",
+			"checksum": "28714141901471bb60ebddae62ab841f1c07c33d"
+		},
+		{
+			"path": "server/methods/info_planes.js",
+			"checksum": "4a76c92a5c2b814e44f17a9737a35e439497b57f"
+		},
+		{
+			"path": "server/collections/info_planes.js",
+			"checksum": "79a419eed89e8efcf2eec3a2d33849a5762c9c72"
+		},
+		{
+			"path": "server/publish/info_planes.js",
+			"checksum": "6245dcf89961d5a52bb5673b1b34bfcfd1a9257e"
+		},
+		{
+			"path": "both/collections/info_agenda_rx.js",
+			"checksum": "f13bb145ca9727a3433a4174986d6c38bd5e3576"
+		},
+		{
+			"path": "server/methods/info_agenda_rx.js",
+			"checksum": "f0b8c17b4d0c1d8c1864dc082d69ca735ad2ca52"
+		},
+		{
+			"path": "server/collections/info_agenda_rx.js",
+			"checksum": "531eac7664b4595065b7441f7cc3ef18464ce195"
+		},
+		{
+			"path": "server/publish/info_agenda_rx.js",
+			"checksum": "29ac041df0a48f466304138d46827504cebacb44"
+		},
+		{
+			"path": "both/collections/info_agenda_sop.js",
+			"checksum": "9ace774f2dca44ce973500675ca2d4899d25b570"
+		},
+		{
+			"path": "server/methods/info_agenda_sop.js",
+			"checksum": "fe9bd2fbc11bcc8d330be9b1c1c5b7011da06598"
+		},
+		{
+			"path": "server/collections/info_agenda_sop.js",
+			"checksum": "bef8650633e6de668620ba20cbda938683d50451"
+		},
+		{
+			"path": "server/publish/info_agenda_sop.js",
+			"checksum": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+		},
+		{
+			"path": "both/collections/info_counters.js",
+			"checksum": "3e0a6f46c834060645fcbc268868a88a0277f3a8"
+		},
+		{
+			"path": "server/methods/info_counters.js",
+			"checksum": "741e81fa3815c19d38fe0b9876d956a8884cecdf"
+		},
+		{
+			"path": "server/collections/info_counters.js",
+			"checksum": "538a6a75a323d22514e8aaf2df63ef244dcf2b3a"
+		},
+		{
+			"path": "server/publish/info_counters.js",
+			"checksum": "0e16167c506c93ce550b5808f43f8d8a95067b47"
+		},
+		{
+			"path": "client/styles/styles/animate_visible.js",
+			"checksum": "f2f5445a4f437805ef88b61169e3c5386ee67911"
+		},
+		{
+			"path": "both/collections/_common.js",
+			"checksum": "d434105031e3c2cfa67393470e0c50ea210eeec0"
+		},
+		{
+			"path": "client/lib/util_varios.js",
+			"checksum": "c45233b1dff64809968faf12e20ff7c437f3a39c"
+		},
+		{
+			"path": "public/spanish.json",
+			"checksum": "e42b2c31ca6248cb6122cd977c4b3f008857f448"
+		},
+		{
+			"path": "lib/util_varios.js",
+			"checksum": "245a14d973ae45050ac43bdbb41bc238d27ddbdf"
+		},
+		{
+			"path": "settings.json",
+			"checksum": "f813b5e59ed003b15de3b100b572d5440fa5cf59"
+		},
+		{
+			"path": "client/views/layout/util_helpers.js",
+			"checksum": "839ed8ed3cfa2fdea2208b81db9cc86c935a3266"
+		},
+		{
+			"path": "server/main.js",
+			"checksum": "34ef2936f955c2db17bddab4b3342e8dfb1fd327"
+		},
+		{
+			"path": "client/views/layout/head.html",
+			"checksum": "37787e012f1bd47e3f4c2f493bc102902210bb57"
+		},
+		{
+			"path": "server/methods/themes.js",
+			"checksum": "0a2ce02f891d5326b9ba73ef407b54fbbc8baf3c"
+		},
+		{
+			"path": "private/themes/readable/bootstrap.min.css",
+			"checksum": "4ae7b5875a2a59e75eeb84c81bb24121e8f0b6f7"
+		},
+		{
+			"path": "private/themes/paper/bootstrap.min.css",
+			"checksum": "ce01cff385b80af81a573431f8db6b9dbcc96537"
+		},
+		{
+			"path": "private/themes/solar/bootstrap.min.css",
+			"checksum": "028f1c3cc5dd9c7e46abc2add0d57c818037ecc5"
+		},
+		{
+			"path": "private/themes/sketchy/bootstrap.min.css",
+			"checksum": "fee713173c96aa33511079345861f26f00b6c711"
+		},
+		{
+			"path": "private/themes/materia/bootstrap.min.css",
+			"checksum": "3f5d0a855c6896df3a1a3b107b6e9ab2c7f0d6a6"
+		},
+		{
+			"path": "private/themes/lux/bootstrap.min.css",
+			"checksum": "1dfcb0dd600293339e015951006268a3fcbc2f39"
+		},
+		{
+			"path": "private/themes/litera/bootstrap.min.css",
+			"checksum": "2304587e795e8d2650dde048d745887452389143"
+		},
+		{
+			"path": "private/themes/yeti/bootstrap.min.css",
+			"checksum": "152bfa699882a49a82e7e9c7ef0d8df47488289c"
+		},
+		{
+			"path": "private/themes/united/bootstrap.min.css",
+			"checksum": "2df5eac233761691e897c0a145afffcb88dc5a5c"
+		},
+		{
+			"path": "private/themes/superhero/bootstrap.min.css",
+			"checksum": "449a0f95bb39ba0355f5772d94841cc92077bc02"
+		},
+		{
+			"path": "private/themes/spacelab/bootstrap.min.css",
+			"checksum": "7953ac4ac29850da032cdb546e1d0808b8ddb76c"
+		},
+		{
+			"path": "private/themes/slate/bootstrap.min.css",
+			"checksum": "94ccc8f8331656ecb669533a2979721f3d261fc8"
+		},
+		{
+			"path": "private/themes/simplex/bootstrap.min.css",
+			"checksum": "540886c4f068401b87b25f3ba37d55f504a64853"
+		},
+		{
+			"path": "private/themes/sandstone/bootstrap.min.css",
+			"checksum": "6c99cbe91262efd4419fa85083272aec417ef574"
+		},
+		{
+			"path": "private/themes/minty/bootstrap.min.css",
+			"checksum": "bfcfc5383cdb01c29246cbe0910844073c09f391"
+		},
+		{
+			"path": "private/themes/pulse/bootstrap.min.css",
+			"checksum": "bc458889e6c060077e52c980f2d8a0d8bc60e961"
+		},
+		{
+			"path": "private/themes/lumen/bootstrap.min.css",
+			"checksum": "0c5fc5a060738b8343bf938bb880b75da818fdf9"
+		},
+		{
+			"path": "private/themes/journal/bootstrap.min.css",
+			"checksum": "4b1ab0eb31a923930babe512c5d9f7b3c43754ef"
+		},
+		{
+			"path": "private/themes/flatly/bootstrap.min.css",
+			"checksum": "bf0abd3cf9e7706d7466ff907ee8f6373d83ca0c"
+		},
+		{
+			"path": "private/themes/darkly/bootstrap.min.css",
+			"checksum": "6629190e21c317713e370bd92f9b2ae71a7eb210"
+		},
+		{
+			"path": "private/themes/cyborg/bootstrap.min.css",
+			"checksum": "fca89a73abe2e060a7cb8826f8ad5c67dc393a63"
+		},
+		{
+			"path": "private/themes/cosmo/bootstrap.min.css",
+			"checksum": "eaea52b4bb62275938f4b524ca9b3233ef1074c8"
+		},
+		{
+			"path": "private/themes/cerulean/bootstrap.min.css",
+			"checksum": "ce4d9b13216973dde23400d0e56da5b592e8e231"
+		},
+		{
+			"path": "private/font-awesome.min.css",
+			"checksum": "1e630cd4cf6f0b6dcc9ad1145a7d218be7439e8b"
+		},
+		{
+			"path": "server/lib/bulkCollectionUpdate.js",
+			"checksum": "64c598bbe5e9254f8d6d12be1a1e4b1d21058962"
+		},
+		{
+			"path": "both/collections/_counters.js",
+			"checksum": "7bfeda9255f291dd862a96e628cca122472ce7a1"
+		},
+		{
+			"path": "server/publish/users_status.js",
+			"checksum": "aa83b99399166100f9e52fec5b9b160c81fecb35"
+		},
+		{
+			"path": "server/logs.js",
+			"checksum": "c83e67b0e63a786084dc3c0860b84a88a2234cfe"
+		},
+		{
+			"path": "client/_client.js",
+			"checksum": "77fa2b7384c809d909dd8aabac3608289403fc17"
+		},
+		{
+			"path": "client/views/layout/util_helpers.html",
+			"checksum": "29dc122b84bc4d01d875575f2680be5a8e3d5727"
+		},
+		{
+			"path": "server/lib/_utils.js",
+			"checksum": "194c856ec1fa709cb22db32aea0a5fd91f0699c5"
+		},
+		{
+			"path": "lib/string_utils.js",
+			"checksum": "6bf8f64bf32bd7aff71cbeeba23df9fb8282a12c"
+		},
+		{
+			"path": "lib/case_utils.js",
+			"checksum": "552ee22b40c83544230a1132b3ee8e875270ec2a"
+		},
+		{
+			"path": "lib/object_utils.js",
+			"checksum": "0660e53aff2c1841d88a344b80af744fb8c9b15c"
+		},
+		{
+			"path": "client/lib/http_utils.js",
+			"checksum": "740095219b687a460a789da9ab9ef4d64a111b9c"
+		},
+		{
+			"path": "client/lib/router_utils.js",
+			"checksum": "6c525b829661ff9a2e4de74a669127f24db4e6ce"
+		},
+		{
+			"path": "client/components/confirmation_dialog/confirmation_dialog.html",
+			"checksum": "0b18337001868ce18f74041a43f90f7461068ba2"
+		},
+		{
+			"path": "client/components/confirmation_dialog/confirmation_dialog.js",
+			"checksum": "7ab46ff82b06a36fc2bdbe30e7bd164b660dfc1b"
+		},
+		{
+			"path": "client/components/input_dialog/input_dialog.html",
+			"checksum": "4717e6ebb273c655f5f6d5c133a5814f5deee6c1"
+		},
+		{
+			"path": "client/components/input_dialog/input_dialog.js",
+			"checksum": "62dce4c81f8955ca99e429737ae41eb8416bf632"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3/custom.bootstrap.import.less",
+			"checksum": "8007cd69773c1c62284460f7c0fd8310e7f60094"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3/custom.bootstrap.json",
+			"checksum": "59c3803dde72dfd34e95a52dc4f5cae65018ec38"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3/custom.bootstrap.less",
+			"checksum": "a114a65d406f228e4137a3fb7b33047c40a5cd68"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3/custom.bootstrap.mixins.import.less",
+			"checksum": "b53332a4c7dffc57aefda1db82b4e09258dad07a"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3-plugins/bootstrap-fileinput/fileinput.css",
+			"checksum": "30ba45c948bcb125cf0cb550b4a9d2f13ffcc710"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3-plugins/bootstrap-fileinput/fileinput.js",
+			"checksum": "b6c83cb478c232284b8b6cae90d0ec2840d93332"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3-plugins/bootstrap-fileinput/fileinput_locale_cz.js",
+			"checksum": "146a2a2bd0e89b62b775eee929907970e875ddf6"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3-plugins/bootstrap-fileinput/fileinput_locale_de.js",
+			"checksum": "fcad7c9406cb7ab1959ee5a62825a62b905f34a2"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3-plugins/bootstrap-fileinput/fileinput_locale_el.js",
+			"checksum": "d00eebe17389c41dbdfdd5611573ba52169f16eb"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3-plugins/bootstrap-fileinput/fileinput_locale_es.js",
+			"checksum": "6eb5775359ee3e6199962d05fb6a2ddf79426766"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3-plugins/bootstrap-fileinput/fileinput_locale_fr.js",
+			"checksum": "aea834881f99fe187153560b32011c2af7f56092"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3-plugins/bootstrap-fileinput/fileinput_locale_hu.js",
+			"checksum": "500bfd774110b73e07e9f4e23a4cbf9c896fbcea"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3-plugins/bootstrap-fileinput/fileinput_locale_it.js",
+			"checksum": "09d41c11dadf15f197bd443f5ad01a68e3408bde"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3-plugins/bootstrap-fileinput/fileinput_locale_LANG.js",
+			"checksum": "e80901eda8d09ee66e3375ddd6d7f7a53dbfcda8"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3-plugins/bootstrap-fileinput/fileinput_locale_nl.js",
+			"checksum": "106dfa775832df6830675c8927603a813063986c"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3-plugins/bootstrap-fileinput/fileinput_locale_pl.js",
+			"checksum": "77ce969c9532dc4cda50d57bad7c8e8c9e792386"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3-plugins/bootstrap-fileinput/fileinput_locale_pt-BR.js",
+			"checksum": "8caeab2c4b40a90eba4412eb5a31c76405e5a04a"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3-plugins/bootstrap-fileinput/fileinput_locale_pt.js",
+			"checksum": "f1d3b0c83a6a10b6e1cd7b8f523a98a7a51720ac"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3-plugins/bootstrap-fileinput/fileinput_locale_ro.js",
+			"checksum": "7fcbd870c67fbd4646b6b53c4e07f84ebaf6ebd1"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3-plugins/bootstrap-fileinput/fileinput_locale_ru.js",
+			"checksum": "4939e4b72d235b9a68602aba3501bd72bde77611"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3-plugins/bootstrap-fileinput/fileinput_locale_sk.js",
+			"checksum": "1dc9d65243156006cf762ed85cdf36501c27f38a"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3-plugins/bootstrap-fileinput/fileinput_locale_sr.js",
+			"checksum": "50ac58590814ab9959e34d94a4b2bb8cf9be35b9"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3-plugins/bootstrap-fileinput/fileinput_locale_th.js",
+			"checksum": "05fec04f2b334bd579126eeb54321fbec516470f"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3-plugins/bootstrap-fileinput/fileinput_locale_tr.js",
+			"checksum": "25e2ea3f23c594180a3496f814ae907343de1add"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3-plugins/bootstrap-fileinput/fileinput_locale_uk.js",
+			"checksum": "f5f6b5052a111fa87a5da8608a5d137d4116e6c5"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3-plugins/bootstrap-fileinput/fileinput_locale_zh.js",
+			"checksum": "f477aede4974871fc0ba71d3ed4f90d8b9f1a74e"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3-plugins/bootstrap-tagsinput/bootstrap-tagsinput.css",
+			"checksum": "49937990ee001ae632d23d1e9bb71dc4460ac7c1"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3-plugins/bootstrap-tagsinput/bootstrap-tagsinput.js",
+			"checksum": "6f25a97cb1bb9b8edcf0cb297eabfc9f94f1a80d"
+		},
+		{
+			"path": "client/lib/form_utils.js",
+			"checksum": "46a13af61ccfb4b4fb58a6e378eeaf9c6206676e"
+		}
+	],
+	"output_directories": [
+		"both/",
+		"both/collections/",
+		"both/joins/",
+		"both/lib/",
+		"client/",
+		"client/components/",
+		"client/components/confirmation_dialog/",
+		"client/components/input_dialog/",
+		"client/lib/",
+		"client/lib/globals/",
+		"client/styles/",
+		"client/styles/framework/",
+		"client/styles/framework/bootstrap3-plugins/bootstrap-fileinput/",
+		"client/styles/framework/bootstrap3-plugins/bootstrap-tagsinput/",
+		"client/styles/framework/bootstrap3/",
+		"client/styles/styles/",
+		"client/styles/styles/theme/",
+		"client/views/",
+		"client/views/admin/",
+		"client/views/admin/counters/",
+		"client/views/admin/counters/details/",
+		"client/views/admin/counters/insert/",
+		"client/views/admin/counters/update/",
+		"client/views/admin/users/",
+		"client/views/admin/users/details/",
+		"client/views/admin/users/edit/",
+		"client/views/admin/users/insert/",
+		"client/views/agenda_rx/",
+		"client/views/agenda_sop/",
+		"client/views/aseguradoras/",
+		"client/views/aseguradoras/details/",
+		"client/views/aseguradoras/insert/",
+		"client/views/aseguradoras/update/",
+		"client/views/clasificaciones/",
+		"client/views/clasificaciones/details/",
+		"client/views/clasificaciones/insert/",
+		"client/views/clasificaciones/update/",
+		"client/views/departamentos/",
+		"client/views/departamentos/details/",
+		"client/views/departamentos/insert/",
+		"client/views/departamentos/update/",
+		"client/views/especialidades/",
+		"client/views/especialidades/details/",
+		"client/views/especialidades/insert/",
+		"client/views/especialidades/update/",
+		"client/views/forgot_password/",
+		"client/views/home_private/",
+		"client/views/home_public/",
+		"client/views/layout/",
+		"client/views/loading/",
+		"client/views/login/",
+		"client/views/logout/",
+		"client/views/not_found/",
+		"client/views/pacientes/",
+		"client/views/pacientes/details/",
+		"client/views/pacientes/insert/",
+		"client/views/pacientes/update/",
+		"client/views/planes/",
+		"client/views/planes/details/",
+		"client/views/planes/insert/",
+		"client/views/planes/update/",
+		"client/views/procedimientos/",
+		"client/views/procedimientos/details/",
+		"client/views/procedimientos/insert/",
+		"client/views/procedimientos/update/",
+		"client/views/referidores/",
+		"client/views/referidores/details/",
+		"client/views/referidores/insert/",
+		"client/views/referidores/update/",
+		"client/views/register/",
+		"client/views/reset_password/",
+		"client/views/secciones/",
+		"client/views/secciones/details/",
+		"client/views/secciones/insert/",
+		"client/views/secciones/update/",
+		"client/views/user_settings/",
+		"client/views/user_settings/change_pass/",
+		"client/views/user_settings/profile/",
+		"client/views/verify_email/",
+		"imports/",
+		"lib/",
+		"packages/",
+		"private/",
+		"private/themes/cerulean/",
+		"private/themes/cosmo/",
+		"private/themes/cyborg/",
+		"private/themes/darkly/",
+		"private/themes/flatly/",
+		"private/themes/journal/",
+		"private/themes/litera/",
+		"private/themes/lumen/",
+		"private/themes/lux/",
+		"private/themes/materia/",
+		"private/themes/minty/",
+		"private/themes/paper/",
+		"private/themes/pulse/",
+		"private/themes/readable/",
+		"private/themes/sandstone/",
+		"private/themes/simplex/",
+		"private/themes/sketchy/",
+		"private/themes/slate/",
+		"private/themes/solar/",
+		"private/themes/spacelab/",
+		"private/themes/superhero/",
+		"private/themes/united/",
+		"private/themes/yeti/",
+		"public/",
+		"public/fonts/",
+		"public/images/",
+		"server/",
+		"server/collections/",
+		"server/controllers/",
+		"server/lib/",
+		"server/methods/",
+		"server/publish/"
+	],
+	"packages": {
+		"meteor": [
+			"themeteorchef:bert",
+			"aldeed:tabular",
+			"chrismbeckett:toastr",
+			"copleykj:livestamp",
+			"mizzao:user-status",
+			"mizzao:timesync",
+			"numeral:numeral",
+			"vsivsi:file-collection",
+			"benjaminrh:jquery-cookie",
+			"dburles:collection-helpers",
+			"andrasph:clockpicker",
+			"session",
+			"check",
+			"fullcalendar:fullcalendar",
+			"momentjs:moment",
+			"dburles:google-maps",
+			"anti:i18n",
+			"aslagle:reactive-table",
+			"isotope:isotope",
+			"peppelg:bootstrap-3-modal",
+			"ostrio:logger",
+			"ostrio:loggerfile",
+			"natestrauser:animate-css",
+			"aldeed:collection2",
+			"accounts-password",
+			"blaze-html-templates",
+			"accounts-base",
+			"http",
+			"email",
+			"spiderable",
+			"ejson",
+			"random",
+			"iron:router",
+			"fortawesome:fontawesome",
+			"matb33:collection-hooks",
+			"perak:user-roles",
+			"less",
+			"nemo64:bootstrap@=3.3.5_2",
+			"reactive-dict",
+			"mizzao:bootboxjs",
+			"rajit:bootstrap3-datepicker"
+		],
+		"npm": [
+			"pdfmake",
+			"simpl-schema",
+			"jszip",
+			"js-sha256",
+			"datatables.net-scroller-bs",
+			"datatables.net-responsive-bs",
+			"datatables.net-keytable-bs",
+			"datatables.net-buttons-bs",
+			"datatables.net-autofill-bs",
+			"datatables.net-bs",
+			"bcrypt"
+		],
+		"mrt": [
+		]
+	}
+}

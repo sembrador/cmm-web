@@ -1,0 +1,192 @@
+<template name="ReferidoresDetails">
+	<div class="page-container container" id="content">
+		<div class="row" id="title_row">
+			<div class="col-md-12">
+			</div>
+		</div>
+		{{> ReferidoresDetailsForm}}
+	</div>
+</template>
+
+<template name="ReferidoresDetailsForm">
+	<div id="referidores-details-form" class="">
+		<h2 id="component-title">
+			<a href="#" id="form-back-button" class="btn btn-default" title="regresar">
+				<span class="fa fa-chevron-left">
+				</span>
+			</a>
+			Detalles Referidor
+		</h2>
+		<form role="form">
+			{{#if errorMessage}}
+			<div class="alert alert-warning">
+				{{errorMessage}}
+			</div>
+			{{/if}}
+
+			{{#if infoMessage}}
+			<div class="alert alert-success">
+				{{infoMessage}}
+			</div>
+			{{/if}}
+			<div class="form-group  field-ref_codigo">
+				<label for="ref_codigo">
+					CODIGO
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-ref_codigo">
+						{{referidor.ref_codigo}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-ref_nombres">
+				<label for="ref_nombres">
+					NOMBRES
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-ref_nombres">
+						{{referidor.ref_nombres}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-ref_apellidos">
+				<label for="ref_apellidos">
+					APELLIDOS
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-ref_apellidos">
+						{{referidor.ref_apellidos}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-ref_genero">
+				<label for="ref_genero">
+					SEXO
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-ref_genero">
+						{{referidor.ref_genero}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-ref_fch_nac">
+				<label for="ref_fch_nac">
+					FECHA DE NACIMIENTO
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-ref_fch_nac">
+						{{formatDate referidor.ref_fch_nac 'DD/MM/YYYY'}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group text field-ref_telefonos-celular">
+				<label for="ref_telefonos.celular">
+					CELULAR
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-ref_telefonos-celular">
+						{{referidor.ref_telefonos.celular}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group text field-ref_telefonos-trabajo">
+				<label for="ref_telefonos.trabajo">
+					TRABAJO
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-ref_telefonos-trabajo">
+						{{referidor.ref_telefonos.trabajo}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group text field-ref_telefonos-casa">
+				<label for="ref_telefonos.casa">
+					CASA
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-ref_telefonos-casa">
+						{{referidor.ref_telefonos.casa}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group text field-ref_telefonos-otro">
+				<label for="ref_telefonos.otro">
+					OTRO
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-ref_telefonos-otro">
+						{{referidor.ref_telefonos.otro}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group text field-ref_direccion-calle">
+				<label for="ref_direccion.calle">
+					CALLE
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-ref_direccion-calle">
+						{{referidor.ref_direccion.calle}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group text field-ref_direccion-corregimiento">
+				<label for="ref_direccion.corregimiento">
+					CORREGIMIENTO
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-ref_direccion-corregimiento">
+						{{referidor.ref_direccion.corregimiento}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group text field-ref_direccion-distrito">
+				<label for="ref_direccion.distrito">
+					DISTRITO
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-ref_direccion-distrito">
+						{{referidor.ref_direccion.distrito}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group text field-ref_direccion-provincia">
+				<label for="ref_direccion.provincia">
+					PROVINCIA
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-ref_direccion-provincia">
+						{{referidor.ref_direccion.provincia}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group text field-ref_direccion-apartado">
+				<label for="ref_direccion.apartado">
+					APARTADO
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-ref_direccion-apartado">
+						{{referidor.ref_direccion.apartado}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-ref_email">
+				<label for="ref_email">
+					E-MAIL
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-ref_email">
+						{{referidor.ref_email}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="submit-div">
+					<a href="#" id="form-close-button" class="btn btn-primary">
+						OK
+					</a>
+				</div>
+			</div>
+		</form>
+	</div>
+</template>
+

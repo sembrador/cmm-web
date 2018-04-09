@@ -1,0 +1,322 @@
+<template name="PacientesDetails">
+	<div class="page-container container" id="content">
+		<div class="row" id="title_row">
+			<div class="col-md-12">
+			</div>
+		</div>
+		{{> PacientesDetailsForm}}
+	</div>
+</template>
+
+<template name="PacientesDetailsForm">
+	<div id="pacientes-details-form" class="">
+		<h2 id="component-title">
+			<a href="#" id="form-back-button" class="btn btn-default" title="regresar">
+				<span class="fa fa-chevron-left">
+				</span>
+			</a>
+			Detalles Paciente
+		</h2>
+		<form role="form">
+			{{#if errorMessage}}
+			<div class="alert alert-warning">
+				{{errorMessage}}
+			</div>
+			{{/if}}
+
+			{{#if infoMessage}}
+			<div class="alert alert-success">
+				{{infoMessage}}
+			</div>
+			{{/if}}
+			<div class="form-group  field-cliente_numero">
+				<label for="cliente_numero">
+					NUMERO
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-cliente_numero">
+						{{paciente.cliente_numero}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-cliente_nombres">
+				<label for="cliente_nombres">
+					NOMBRES
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-cliente_nombres">
+						{{paciente.cliente_nombres}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-cliente_apellidos">
+				<label for="cliente_apellidos">
+					APELLIDOS
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-cliente_apellidos">
+						{{paciente.cliente_apellidos}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-cliente_genero">
+				<label for="cliente_genero">
+					SEXO
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-cliente_genero">
+						{{paciente.cliente_genero}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-cliente_fch_nac">
+				<label for="cliente_fch_nac">
+					FECHA DE NACIMIENTO
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-cliente_fch_nac">
+						{{formatDate paciente.cliente_fch_nac 'DD/MM/YYYY'}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-cliente_tipaje">
+				<label for="cliente_tipaje">
+					TIPO DE SANGRE
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-cliente_tipaje">
+						{{paciente.cliente_tipaje}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group text field-cliente_telefonos-celular">
+				<label for="cliente_telefonos.celular">
+					CELULAR
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-cliente_telefonos-celular">
+						{{paciente.cliente_telefonos.celular}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group text field-cliente_telefonos-trabajo">
+				<label for="cliente_telefonos.trabajo">
+					TRABAJO
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-cliente_telefonos-trabajo">
+						{{paciente.cliente_telefonos.trabajo}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group text field-cliente_telefonos-casa">
+				<label for="cliente_telefonos.casa">
+					CASA
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-cliente_telefonos-casa">
+						{{paciente.cliente_telefonos.casa}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group text field-cliente_telefonos-otro">
+				<label for="cliente_telefonos.otro">
+					OTRO
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-cliente_telefonos-otro">
+						{{paciente.cliente_telefonos.otro}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group text field-cliente_direccion_casa-calle">
+				<label for="cliente_direccion_casa.calle">
+					CALLE
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-cliente_direccion_casa-calle">
+						{{paciente.cliente_direccion_casa.calle}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group text field-cliente_direccion_casa-corregimiento">
+				<label for="cliente_direccion_casa.corregimiento">
+					CORREGIMIENTO
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-cliente_direccion_casa-corregimiento">
+						{{paciente.cliente_direccion_casa.corregimiento}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group text field-cliente_direccion_casa-distrito">
+				<label for="cliente_direccion_casa.distrito">
+					DISTRITO
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-cliente_direccion_casa-distrito">
+						{{paciente.cliente_direccion_casa.distrito}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group text field-cliente_direccion_casa-provincia">
+				<label for="cliente_direccion_casa.provincia">
+					PROVINCIA
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-cliente_direccion_casa-provincia">
+						{{paciente.cliente_direccion_casa.provincia}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group text field-cliente_direccion_casa-apartado">
+				<label for="cliente_direccion_casa.apartado">
+					APARTADO
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-cliente_direccion_casa-apartado">
+						{{paciente.cliente_direccion_casa.apartado}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group text field-cliente_direccion_trabajo-calle">
+				<label for="cliente_direccion_trabajo.calle">
+					CALLE
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-cliente_direccion_trabajo-calle">
+						{{paciente.cliente_direccion_trabajo.calle}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group text field-cliente_direccion_trabajo-corregimiento">
+				<label for="cliente_direccion_trabajo.corregimiento">
+					CORREGIMIENTO
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-cliente_direccion_trabajo-corregimiento">
+						{{paciente.cliente_direccion_trabajo.corregimiento}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group text field-cliente_direccion_trabajo-distrito">
+				<label for="cliente_direccion_trabajo.distrito">
+					DISTRITO
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-cliente_direccion_trabajo-distrito">
+						{{paciente.cliente_direccion_trabajo.distrito}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group text field-cliente_direccion_trabajo-provincia">
+				<label for="cliente_direccion_trabajo.provincia">
+					PROVINCIA
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-cliente_direccion_trabajo-provincia">
+						{{paciente.cliente_direccion_trabajo.provincia}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group text field-cliente_direccion_trabajo-apartado">
+				<label for="cliente_direccion_trabajo.apartado">
+					APARTADO
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-cliente_direccion_trabajo-apartado">
+						{{paciente.cliente_direccion_trabajo.apartado}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-cliente_cedula">
+				<label for="cliente_cedula">
+					CEDULA
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-cliente_cedula">
+						{{paciente.cliente_cedula}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-cliente_pasaporte">
+				<label for="cliente_pasaporte">
+					PASAPORTE
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-cliente_pasaporte">
+						{{paciente.cliente_pasaporte}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-cliente_ssocial">
+				<label for="cliente_ssocial">
+					SEGURO SOCIAL
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-cliente_ssocial">
+						{{paciente.cliente_ssocial}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-cliente_email">
+				<label for="cliente_email">
+					E-MAIL
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-cliente_email">
+						{{paciente.cliente_email}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-cliente_ecivil">
+				<label for="cliente_ecivil">
+					ESTADO CIVIL
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-cliente_ecivil">
+						{{paciente.cliente_ecivil}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-cliente_clase">
+				<label for="cliente_clase">
+					CLASIFICACION
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-cliente_clase">
+						{{paciente.cliente_clase}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-cliente_activo">
+				<label for="cliente_activo">
+					ACTIVO
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-cliente_activo">
+						{{paciente.cliente_activo}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-cliente_notas">
+				<label for="cliente_notas">
+					OBSERVACIONES
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-cliente_notas">
+						{{paciente.cliente_notas}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="submit-div">
+					<a href="#" id="form-close-button" class="btn btn-primary">
+						OK
+					</a>
+				</div>
+			</div>
+		</form>
+	</div>
+</template>
+

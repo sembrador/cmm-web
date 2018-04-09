@@ -1,0 +1,232 @@
+<template name="ReferidoresInsert">
+	<div class="page-container container" id="content">
+		<div class="row" id="title_row">
+			<div class="col-md-12">
+			</div>
+		</div>
+		{{> ReferidoresInsertForm}}
+	</div>
+</template>
+
+<template name="ReferidoresInsertForm">
+	<div id="referidores-insert-form" class="">
+		<h2 id="component-title">
+			Agregar Referidor
+		</h2>
+		<form role="form">
+			{{#if errorMessage}}
+			<div class="alert alert-warning">
+				{{errorMessage}}
+			</div>
+			{{/if}}
+
+			{{#if infoMessage}}
+			<div class="alert alert-success">
+				{{infoMessage}}
+			</div>
+			{{/if}}
+			<div class="form-group  field-ref_codigo">
+				<label for="ref_codigo">
+					CODIGO
+				</label>
+				<div class="input-div">
+					<input type="text" name="ref_codigo" value="" class="form-control " autofocus="autofocus" data-type="integer">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-ref_nombres">
+				<label for="ref_nombres">
+					NOMBRES
+				</label>
+				<div class="input-div">
+					<input type="text" name="ref_nombres" value="" class="form-control " required="required" data-type="string">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-ref_apellidos">
+				<label for="ref_apellidos">
+					APELLIDOS
+				</label>
+				<div class="input-div">
+					<input type="text" name="ref_apellidos" value="" class="form-control " required="required" data-type="string">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-ref_genero">
+				<label for="ref_genero">
+					SEXO
+				</label>
+				<div class="input-div">
+					<select class="form-control " name="ref_genero" data-type="string" required="required">
+						<option value="M" selected>							MASCULINO</option>
+						<option value="F">							FEMENINO</option>
+					</select>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-ref_fch_nac">
+				<label for="ref_fch_nac">
+					FECHA DE NACIMIENTO
+				</label>
+				<div class="input-div">
+					<div class="input-group date">
+						<input type="text" name="ref_fch_nac" value="" class="form-control " required="required" data-type="date" data-format="DD/MM/YYYY">
+						<span class="input-group-addon">
+							<i class="fa fa-calendar">
+							</i>
+						</span>
+					</div>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group text field-ref_telefonos-celular">
+				<label for="ref_telefonos.celular">
+					CELULAR
+				</label>
+				<div class="input-div">
+					<input type="text" name="ref_telefonos.celular" value="" class="form-control " required="required" data-type="object">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group text field-ref_telefonos-trabajo">
+				<label for="ref_telefonos.trabajo">
+					TRABAJO
+				</label>
+				<div class="input-div">
+					<input type="text" name="ref_telefonos.trabajo" value="" class="form-control " required="required" data-type="object">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group text field-ref_telefonos-casa">
+				<label for="ref_telefonos.casa">
+					CASA
+				</label>
+				<div class="input-div">
+					<input type="text" name="ref_telefonos.casa" value="" class="form-control " required="required" data-type="object">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group text field-ref_telefonos-otro">
+				<label for="ref_telefonos.otro">
+					OTRO
+				</label>
+				<div class="input-div">
+					<input type="text" name="ref_telefonos.otro" value="" class="form-control " required="required" data-type="object">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group text field-ref_direccion-calle">
+				<label for="ref_direccion.calle">
+					CALLE
+				</label>
+				<div class="input-div">
+					<input type="text" name="ref_direccion.calle" value="" class="form-control " required="required" data-type="object">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group text field-ref_direccion-corregimiento">
+				<label for="ref_direccion.corregimiento">
+					CORREGIMIENTO
+				</label>
+				<div class="input-div">
+					<input type="text" name="ref_direccion.corregimiento" value="" class="form-control " required="required" data-type="object">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group text field-ref_direccion-distrito">
+				<label for="ref_direccion.distrito">
+					DISTRITO
+				</label>
+				<div class="input-div">
+					<input type="text" name="ref_direccion.distrito" value="" class="form-control " required="required" data-type="object">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group text field-ref_direccion-provincia">
+				<label for="ref_direccion.provincia">
+					PROVINCIA
+				</label>
+				<div class="input-div">
+					<input type="text" name="ref_direccion.provincia" value="" class="form-control " required="required" data-type="object">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group text field-ref_direccion-apartado">
+				<label for="ref_direccion.apartado">
+					APARTADO
+				</label>
+				<div class="input-div">
+					<input type="text" name="ref_direccion.apartado" value="" class="form-control " data-type="object">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-ref_email">
+				<label for="ref_email">
+					E-MAIL
+				</label>
+				<div class="input-div">
+					<input type="text" name="ref_email" value="" class="form-control " required="required" data-type="email">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="submit-div">
+					<button id="form-submit-button" class="btn btn-success" type="submit">
+						<span class="fa fa-check">
+						</span>
+						Save
+					</button>
+					<a href="#" id="form-cancel-button" class="btn btn-default">
+						Cancel
+					</a>
+				</div>
+			</div>
+		</form>
+	</div>
+</template>
+

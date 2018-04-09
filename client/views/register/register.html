@@ -1,0 +1,41 @@
+<template name="Register">
+	<div class="container">
+		{{#if verificationEmailSent}}
+		<div class="account-form">
+			<h2>
+				Gracias por registrarse!
+			</h2>
+			<p>
+				Hemos enviado un enlace de verificación a tu dirección de correo electrónico.
+			</p>
+			<br />			<button class="btn btn-lg btn-primary btn-block go-home" type="button" data-loading-text="Por favor espere...">
+				Aceptar
+			</button>
+		</div>
+		{{else}}
+		<form id="register_form" class="account-form" role="form">
+			<h2>
+				Por favor regístrese
+			</h2>
+			{{#if errorMessage}}
+			<div class="alert alert-warning">
+				{{errorMessage}}
+			</div>
+			{{/if}}
+			<input id="register_name" type="text" class="form-control" placeholder="Su nombre completo" required autofocus>
+			<input id="register_email" type="text" class="form-control" placeholder="Correo electrónico" required>
+			<input id="register_password" type="password" class="form-control" placeholder="Contraseña" required>
+			<button class="btn btn-lg btn-primary btn-block" type="submit" data-loading-text="Por favor espere...">
+				Enviar
+			</button>
+			<p class="account-form-text-after">
+				Ya es miembro?
+				<a href="{{pathFor 'login'}}">
+					Inicie sesión aquí
+				</a>
+			</p>
+		</form>
+		{{/if}}
+	</div>
+</template>
+

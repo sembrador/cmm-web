@@ -1,0 +1,91 @@
+<template name="UserSettings">
+	<div class="page-container container">
+		<div class="row">
+			<div class="col-md-12" id="content">
+				<div class="row" id="title_row">
+					<div class="col-md-12">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div id="menu" class="col-sm-3 col-md-2">
+				<h2>
+				</h2>
+				{{> UserSettingsSideMenu}}
+			</div>
+			<div id="subcontent" class="col-sm-9 col-md-10">
+				{{> yield region='UserSettingsSubcontent'}}
+			</div>
+		</div>
+	</div>
+</template>
+
+<template name="UserSettingsSideMenu">
+	<ul id="menu-items" class="nav nav-stacked nav-pills">
+		<li id="menu-item-simple" class="{{menuItemClass 'user_settings.profile'}}">
+			<a href="{{pathFor 'user_settings.profile'}}">
+				<span class="item-title">
+					Configuracion
+				</span>
+			</a>
+		</li>
+		<li id="menu-item-simple" class="{{menuItemClass 'aseguradoras'}}">
+			<a href="{{pathFor 'aseguradoras'}}">
+				<span class="item-title">
+					Aseguradoras
+				</span>
+			</a>
+		</li>
+		<li id="menu-item-simple" class="{{menuItemClass 'referidores'}}">
+			<a href="{{pathFor 'referidores'}}">
+				<span class="item-title">
+					Referidores
+				</span>
+			</a>
+		</li>
+		<li id="menu-item-simple" class="{{menuItemClass 'departamentos'}}">
+			<a href="{{pathFor 'departamentos'}}">
+				<span class="item-title">
+					Departamentos
+				</span>
+			</a>
+		</li>
+		<li id="menu-item-simple" class="{{menuItemClass 'clasificaciones'}}">
+			<a href="{{pathFor 'clasificaciones'}}">
+				<span class="item-title">
+					Clasificaciones
+				</span>
+			</a>
+		</li>
+		<li id="menu-item-simple" class="{{menuItemClass 'secciones'}}">
+			<a href="{{pathFor 'secciones'}}">
+				<span class="item-title">
+					Secciones
+				</span>
+			</a>
+		</li>
+		<li id="menu-item-simple" class="{{menuItemClass 'planes'}}">
+			<a href="{{pathFor 'planes'}}">
+				<span class="item-title">
+					Planes de seguros
+				</span>
+			</a>
+		</li>
+		<li id="menu-item-simple" class="{{menuItemClass 'procedimientos'}}">
+			<a href="{{pathFor 'procedimientos'}}">
+				<span class="item-title">
+					Procedimientos
+				</span>
+			</a>
+		</li>
+		<li id="menu-item-simple" class="{{menuItemClass 'user_settings.change_pass'}}">
+			<a href="{{pathFor 'user_settings.change_pass'}}">
+				<span class="item-title">
+					Cambiar contraseña
+				</span>
+			</a>
+		</li>
+	</ul>
+</template>
+

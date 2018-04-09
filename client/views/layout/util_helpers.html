@@ -1,0 +1,124 @@
+
+<template name="status">
+    <div class="modal fade" id="statusModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header-success" style="min-height: 24px;">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Local Status</h4>
+                </div>
+                <div class="modal-body" style="color: #fff;">
+					<!--<button class="btn btn-success resync">Resync Time</button>-->
+					<table class="table table-hover">
+						<thead>
+							<tr>
+								<th style="font-style: italic;">HORA SERVIDOR</th>
+								<th>Local Offset</th>
+								<th>RTT</th>
+								<th>Idle</th>
+								<th>MONITOR ACTIVO</th>
+								<th>ULTIMA ACTIVIDAD</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>{{serverTime}}</td>
+								<td>{{serverOffset}}</td>
+								<td>{{serverRTT}}</td>
+								<td>{{isIdleText}}</td>
+								<td>{{isMonitoringText}}</td>
+								<td>{{lastActivity}}</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<div style="margin-bottom: 7px;">
+						<button class="btn btn-primary cancel" data-dismiss="modal">Aceptar</button>
+					</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<template name="login">
+    <h3>USTED INICIO COMO:</h3>
+    {{> loginButtons}}
+</template>
+
+<template name="serverStatus">
+    <h3>TODAS LAS CONEXIONES EN EL SERVIDOR:</h3>
+
+    <table class="table table-condensed table-striped table-hover">
+        <thead>
+            <tr>
+                <th>USUARIO/CONEXION</th>
+                <th>Idle</th>
+                <th>ULTIMA ACTIVIDAD</th>
+                <th>IP (<i>ULTIMO</i>)</th>
+                <th style="width: 256px">NAVEGADOR (<i>ULTIMO</i>)</th>
+            </tr>
+        </thead>
+        <tbody>
+        {{#each anonymous}}
+        {{> serverConnection}}
+        {{/each}}
+        {{#each users}}
+            <tr class="bold {{userClass}}">
+                <td>{{username}}<br>(ULTIMO INCIO {{localeTime status.lastLogin.date}})</td>
+                <td>{{status.idle}}</td>
+                <td>{{#with status.lastActivity}}
+                    {{> relTime}}
+                    {{else}}
+                    (ACTIVO O SIN MONITOREO)
+                    {{/with}}
+                </td>
+                <td><i>{{status.lastLogin.ipAddr}}</i></td>
+                <td><i>{{status.lastLogin.userAgent}}</i></td>
+            </tr>
+            {{#each connections}}
+            {{> serverConnection}}
+            {{/each}}
+        {{/each}}
+        </tbody>
+    </table>
+</template>
+
+<template name="serverConnection">
+    <tr class="{{connectionClass}}">
+        <td>{{_id}}{{#with loginTime}}<br>(login {{this}}){{/with}}</td>
+        <td>{{idle}}</td>
+        <td>{{#with lastActivity}}
+            {{> relTime}}
+            {{else}}
+            (active or not monitoring)
+            {{/with}}
+        </td>
+        <td>{{ipAddr}}</td>
+        <td>{{userAgent}}</td>
+    </tr>
+</template>
+
+<template name="relTime">
+    {{localeTime this}}
+    <br>
+    ({{relativeTime this}})
+</template>
+
+<template name="showLogo">
+  <div style="position: relative; top: -13px; left: 0px; width: 160px;">
+    <a class="navbar-brand" href="/">
+      <img id="logoImage" src="/images/logo.png" height="50" width="150" border="0" />
+    </a>
+  </div>
+</template>
+
+<template name="showCopyright">
+  <p class="text-center">
+    &copy; 2017 - <a href="http://castle-soft.com">CASTLE-SOFT PANAMA</a> - Todos Los Derechos Reservados.&nbsp;&nbsp;{{version}}
+  </p>
+</template>
+
+<template name="infoSystem">
+  &nbsp;{{userFullName}}&nbsp;<span class="badge" title="USUARIOS EN LINEA">{{usersOnline}}</span>&nbsp;{{serverTime}}
+</template>
